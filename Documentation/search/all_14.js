@@ -1,0 +1,26 @@
+var searchData=
+[
+  ['uploadbuffer',['uploadBuffer',['../structsc2sensor__context.html#a64dce7ee2d1d53d5fc6829c51ca0ef8f',1,'sc2sensor_context']]],
+  ['uuidforbatterylevel',['UUIDForBatteryLevel',['../group___s_p_e_e_d_c_e_l_l___c_h_a_r_a_c_t_e_r_i_s_t_i_c_s.html#ga8714161541f304ff21a709ea38649f43',1,'sc2characteristics.h']]],
+  ['uuidforcurrenttimecharacteristic',['UUIDForCurrentTimeCharacteristic',['../group___s_p_e_e_d_c_e_l_l___c_h_a_r_a_c_t_e_r_i_s_t_i_c_s.html#ga93a9bea34ef3030b5cf87f20a5311b0a',1,'sc2characteristics.h']]],
+  ['uuidformasterackcharacteristics',['UUIDForMasterAckCharacteristics',['../group___s_p_e_e_d_c_e_l_l___c_h_a_r_a_c_t_e_r_i_s_t_i_c_s.html#gafbe288e82275679628b11a00509e423d',1,'sc2characteristics.h']]],
+  ['uuidformasterbroadcastcharacteristic',['UUIDForMasterBroadcastCharacteristic',['../group___s_p_e_e_d_c_e_l_l___c_h_a_r_a_c_t_e_r_i_s_t_i_c_s.html#ga49020676dd9a51b4b135f89fb5b2bb27',1,'sc2characteristics.h']]],
+  ['uuidformasterburstcharacteristic',['UUIDForMasterBurstCharacteristic',['../group___s_p_e_e_d_c_e_l_l___c_h_a_r_a_c_t_e_r_i_s_t_i_c_s.html#ga39823c2df06b17ce81f95b4ceb89ccfa',1,'sc2characteristics.h']]],
+  ['uuidformasterburstresponsecharacteristic',['UUIDForMasterBurstResponseCharacteristic',['../group___s_p_e_e_d_c_e_l_l___c_h_a_r_a_c_t_e_r_i_s_t_i_c_s.html#gac8f78b8365039c513ed2bdf18d073a3a',1,'sc2characteristics.h']]],
+  ['uuidforrunningspeedandcadencemeasurement',['UUIDForRunningSpeedAndCadenceMeasurement',['../group___s_p_e_e_d_c_e_l_l___c_h_a_r_a_c_t_e_r_i_s_t_i_c_s.html#gaa4a65bada7f1a48d04a4c15d7d8afaeb',1,'sc2characteristics.h']]],
+  ['uuidforslaveackcharacteristic',['UUIDForSlaveAckCharacteristic',['../group___s_p_e_e_d_c_e_l_l___c_h_a_r_a_c_t_e_r_i_s_t_i_c_s.html#gadf5dc963b03a33ebdaa06940e70daba8',1,'sc2characteristics.h']]],
+  ['uuidforslavebroadcastcharacteristic',['UUIDForSlaveBroadcastCharacteristic',['../group___s_p_e_e_d_c_e_l_l___c_h_a_r_a_c_t_e_r_i_s_t_i_c_s.html#gad0cc64599d9fc51f88bf2531e060e781',1,'sc2characteristics.h']]],
+  ['uuidforslaveburstackcharacteristic',['UUIDForSlaveBurstAckCharacteristic',['../group___s_p_e_e_d_c_e_l_l___c_h_a_r_a_c_t_e_r_i_s_t_i_c_s.html#ga450326542afc8a2f329e242f76c914bc',1,'sc2characteristics.h']]],
+  ['uuidforslaveburstcharacteristic',['UUIDForSlaveBurstCharacteristic',['../group___s_p_e_e_d_c_e_l_l___c_h_a_r_a_c_t_e_r_i_s_t_i_c_s.html#gae7b1a06df054ac276cd484ace15483bf',1,'sc2characteristics.h']]],
+  ['uuidforslaveburstresponsecharacteristics',['UUIDForSlaveBurstResponseCharacteristics',['../group___s_p_e_e_d_c_e_l_l___c_h_a_r_a_c_t_e_r_i_s_t_i_c_s.html#ga5271b6e920e7ebb48cf3dc0ad2355edf',1,'sc2characteristics.h']]],
+  ['uuidforsoftwareversioncharacteristic',['UUIDForSoftwareVersionCharacteristic',['../group___s_p_e_e_d_c_e_l_l___c_h_a_r_a_c_t_e_r_i_s_t_i_c_s.html#ga9ff1f7805919037f80b07168002614c8',1,'sc2characteristics.h']]],
+  ['uuidforunusedcharacteristic2001',['UUIDForUnusedCharacteristic2001',['../group___s_p_e_e_d_c_e_l_l___c_h_a_r_a_c_t_e_r_i_s_t_i_c_s.html#gaa3b924fef59e284947271fe2e74e79b9',1,'sc2characteristics.h']]],
+  ['uuidforunusedcharacteristic2002',['UUIDForUnusedCharacteristic2002',['../group___s_p_e_e_d_c_e_l_l___c_h_a_r_a_c_t_e_r_i_s_t_i_c_s.html#gae241c3b3f508be077be304e7b602f48f',1,'sc2characteristics.h']]],
+  ['uuidforunusedcharacteristic2109',['UUIDForUnusedCharacteristic2109',['../group___s_p_e_e_d_c_e_l_l___c_h_a_r_a_c_t_e_r_i_s_t_i_c_s.html#gab3cecad10812e124e96d9e00c1752781',1,'sc2characteristics.h']]],
+  ['uuidforunusedcharacteristic2a24',['UUIDForUnusedCharacteristic2A24',['../group___s_p_e_e_d_c_e_l_l___c_h_a_r_a_c_t_e_r_i_s_t_i_c_s.html#ga9a988e4a2ffa0684d9c6ae1e76b84a8b',1,'sc2characteristics.h']]],
+  ['uuidforunusedcharacteristic2a25',['UUIDForUnusedCharacteristic2A25',['../group___s_p_e_e_d_c_e_l_l___c_h_a_r_a_c_t_e_r_i_s_t_i_c_s.html#gaf243a75d77c293b9ff524b1c656713eb',1,'sc2characteristics.h']]],
+  ['uuidforunusedcharacteristic2a27',['UUIDForUnusedCharacteristic2A27',['../group___s_p_e_e_d_c_e_l_l___c_h_a_r_a_c_t_e_r_i_s_t_i_c_s.html#ga80e441b903c58f2763d2bbd0f005b8d6',1,'sc2characteristics.h']]],
+  ['uuidforunusedcharacteristic2a29',['UUIDForUnusedCharacteristic2A29',['../group___s_p_e_e_d_c_e_l_l___c_h_a_r_a_c_t_e_r_i_s_t_i_c_s.html#ga695d8c1a4f5ce2b37d846d184c0785fb',1,'sc2characteristics.h']]],
+  ['uuidforunusedcharacteristic2a54',['UUIDForUnusedCharacteristic2A54',['../group___s_p_e_e_d_c_e_l_l___c_h_a_r_a_c_t_e_r_i_s_t_i_c_s.html#ga2031f7c7d1a26703d610550380330b90',1,'sc2characteristics.h']]],
+  ['uuidforunusedcharacteristic2a55',['UUIDForUnusedCharacteristic2A55',['../group___s_p_e_e_d_c_e_l_l___c_h_a_r_a_c_t_e_r_i_s_t_i_c_s.html#ga1820962320dcdcb911fe8f4795fab9cd',1,'sc2characteristics.h']]]
+];
