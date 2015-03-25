@@ -39,8 +39,8 @@
     _progressViews = [NSMutableDictionary dictionary];
     
     // licensing details
-    NSString *clientId = @"miCoachSDKLicensing";
-    NSString *clientSecret = @"";
+    NSString *clientId = @"<Your client id here>";
+    NSString *clientSecret = @"<Your client secret here>";
     
     // weak self in closure block
     __weak typeof(self) weakSelf = self;
@@ -159,6 +159,9 @@
  */
 - (void)syncButtonClicked:(UIButton *)button {
 
+    // use weak self in block
+    __weak typeof(self) weakSelf = self;
+
     // get the device from button
     ADIGeneralDevice *device = _devices[button.tag];
 
@@ -166,8 +169,7 @@
     UIViewController *viewController = [miCoachSensorsUI downloadSessionFromDevice:device completion:^(NSArray *sessions, NSError *error) {
         
         // this closure called when async download finished, we just log the result
-        NSLog(@"Sessions count: %lu", (unsigned long)sessions.count);
-        NSLog(@"Error: %@", error);
+        [weakSelf showSessionDownloadedAlertView:sessions error:error];
     }];
     
     // show the UI
@@ -271,6 +273,41 @@
         }
     }
     return NO;
+}
+
+- (void)showSessionDownloadedAlertView:(NSArray *)sessions error:(NSError *)error {
+    
+    NSLog(@"error: %@ sessions: %@", error, sessions);
+    
+    // display results
+    if (error == nil) {
+        
+        [self alertControllerWithTitle:@"Sync successful" message:[NSString stringWithFormat:@"%d sessions downloaded.", (int)sessions.count]];
+    }
+    else {
+        
+        [self alertControllerWithTitle:@"Sync failed" message:[NSString stringWithFormat:@"Error: %@", error]];
+    }
+}
+
+/**
+ *  This method shows a built-in UI to select a sensor and initiate the sessions from it.
+ *
+ *  @param sender The object initiated the event handler.
+ */
+- (IBAction)syncDevice:(id)sender {
+    
+    // use weak self in blocks
+    __weak typeof(self) weakSelf = self;
+
+    // create the view controller
+    UIViewController *viewController = [miCoachSensorsUI downloadSessionFromDevice:^(NSArray *sessions, NSError *error) {
+        
+        [weakSelf showSessionDownloadedAlertView:sessions error:error];
+    }];
+    
+    // and display it
+    [self presentViewController:viewController animated:YES completion:nil];
 }
 
 /**

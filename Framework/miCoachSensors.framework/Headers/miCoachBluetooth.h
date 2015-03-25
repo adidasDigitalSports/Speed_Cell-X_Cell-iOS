@@ -1,0 +1,9 @@
+#import <miCoachSensors/ADIBluetooth.h>
+#import <miCoachSensors/ADIBluetoothDelegate.h>
+#import <miCoachSensors/ADIBluetoothDevice.h>
+#import <miCoachSensors/ADIBluetoothDevices.h>
+#import <miCoachSensors/ADIBluetoothDeviceSpeedCell.h>
+#import <miCoachSensors/ADIBluetoothDeviceType.h>
+#import <miCoachSensors/ADIBluetoothDeviceXCell.h>
+#import <miCoachSensors/ADIDiscoveryFilter.h>
+#import <miCoachSensors/ADIBluetoothError.h>

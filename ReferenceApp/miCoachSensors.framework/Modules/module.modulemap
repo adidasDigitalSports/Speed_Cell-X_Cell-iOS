@@ -1,6 +1,0 @@
-framework module miCoachSensors {
-  umbrella header "miCoachSensors.h"
-
-  export *
-  module * { export * }
-}

@@ -1,0 +1,26 @@
+var searchData=
+[
+  ['read',['read',['../structxcell__request__queue__element.html#af49a80be54293d8b153cd2a3dfd4e068',1,'xcell_request_queue_element']]],
+  ['readfromcharacteristic_5fbinding',['readFromCharacteristic_binding',['../structxcell__context.html#a2924c5debfb7c63b13ceb7e0c9068ee6',1,'xcell_context']]],
+  ['readvalueforcharacteristicwithuuid_3a',['readValueForCharacteristicWithUUID:',['../protocol_a_d_i_bluetooth_delegate_protocol-p.html#ac38bf75b336842436ccb6c7ac4baa241',1,'ADIBluetoothDelegateProtocol-p']]],
+  ['readvaluefromcharacteristic_5fcallback',['readValueFromCharacteristic_callback',['../structsc2sensor__context.html#a0982b45d2771f62dd00d60e982dfd40e',1,'sc2sensor_context']]],
+  ['readvaluefromcharacteristic_5fcallback_5ft',['readValueFromCharacteristic_callback_t',['../group___s_p_e_e_d_c_e_l_l___c_o_n_t_e_x_t.html#gaaac61808866413abdea0f836baac901b',1,'sc2context.h']]],
+  ['receivedburstmessagebuffer',['receivedBurstMessageBuffer',['../structsc2sensor__context.html#a754ea6411de4274fac18922025b07aca',1,'sc2sensor_context']]],
+  ['recievejumpevent_3a',['recieveJumpEvent:',['../interface_a_d_i_x_cell_device.html#a1f682eb57de37771b395011a50bc8157',1,'ADIXCellDevice']]],
+  ['recievereactionevent_3a',['recieveReactionEvent:',['../interface_a_d_i_x_cell_device.html#a7c746c5cb5348ea70470551bdf4e0d40',1,'ADIXCellDevice']]],
+  ['recieveshuttleevent_3a',['recieveShuttleEvent:',['../interface_a_d_i_x_cell_device.html#ae49347d677649b3d5a0f72da1fd36d44',1,'ADIXCellDevice']]],
+  ['request_5fpage_5finvalid',['REQUEST_PAGE_INVALID',['../group___s_p_e_e_d_c_e_l_l___c_o_n_s_t_a_n_t_s.html#ga5c274ed494f302cb4284587fe890dd02',1,'sc2constants.h']]],
+  ['requestantfs',['requestANTFS',['../interface_a_d_i_speed_cell_binding_layer.html#a3f3c339162771b8d4345113664ae4a11',1,'ADISpeedCellBindingLayer']]],
+  ['requestdelay_5fcallback',['requestDelay_callback',['../structsc2sensor__context.html#a5f7b51804586ee82e624af121bd9289a',1,'sc2sensor_context']]],
+  ['requestdelay_5fcallback_5ft',['requestDelay_callback_t',['../group___s_p_e_e_d_c_e_l_l___c_o_n_t_e_x_t.html#ga7e589e07e07312a08b2159b17ba2673e',1,'sc2context.h']]],
+  ['requestedfileindex',['requestedFileIndex',['../structsc2sensor__context.html#ad0b4dc14d78bcd4186ac0c50b6e0d9e5',1,'sc2sensor_context']]],
+  ['requestqueue',['requestQueue',['../structsc2sensor__context.html#a17832e5a4a2e99dc24ee317cbe22a27c',1,'sc2sensor_context::requestQueue()'],['../structxcell__context.html#a07c59883a6b7fbf6f4b4dcde76215049',1,'xcell_context::requestQueue()']]],
+  ['requestsent',['requestSent',['../structsc2request_queue.html#a757f7fc00a4fc72c121a4915a8222bd8',1,'sc2requestQueue']]],
+  ['requiredcharacteristics',['requiredCharacteristics',['../protocol_a_d_i_bluetooth_device_protocol-p.html#a1a395efc0fa29dc47fb12b35c980efd4',1,'ADIBluetoothDeviceProtocol-p']]],
+  ['resettimerfinished_5fcallback',['resetTimerFinished_callback',['../structxcell__context.html#a121f90ba99adc59d856e1c4e72f2a6d5',1,'xcell_context']]],
+  ['resettimerpacketroundtriptimelimit',['resetTimerPacketRoundTripTimeLimit',['../structxcell__context.html#aa01af4458cb2ddf70b510e51304017e2',1,'xcell_context::resetTimerPacketRoundTripTimeLimit()'],['../interface_a_d_i_x_cell_binding_layer.html#aa01af4458cb2ddf70b510e51304017e2',1,'ADIXCellBindingLayer::resetTimerPacketRoundTripTimeLimit()']]],
+  ['resettimertime',['resetTimerTime',['../structxcell__context.html#a5e69cfd908f9cfa06848b5f33481fc38',1,'xcell_context']]],
+  ['rtcset',['RTCSet',['../structxcell__time__t.html#a397027de774b2729fb44a6de4ad0db09',1,'xcell_time_t']]],
+  ['runningspeed',['runningSpeed',['../structsc2rsc__measurement__t.html#a961e92e2b683c7b49b1c567499dae399',1,'sc2rsc_measurement_t::runningSpeed()'],['../interface_a_d_i_speed_cell_r_s_c_measurement.html#a961e92e2b683c7b49b1c567499dae399',1,'ADISpeedCellRSCMeasurement::runningSpeed()'],['../protocol_a_d_i_r_s_c_measurement_protocol-p.html#a5fa6fd6d75cffb4a05ee82ceb423414c',1,'ADIRSCMeasurementProtocol-p::runningSpeed()']]],
+  ['rxburstbuffer',['rxBurstBuffer',['../structsc2sensor__context.html#aa5ec5498fba02fdb9d853f70129abdf0',1,'sc2sensor_context']]]
+];
