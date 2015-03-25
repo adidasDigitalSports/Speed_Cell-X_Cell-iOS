@@ -4,4 +4,4 @@ This framework is designed to provide support for using Adidas miCoach sensors. 
 
 # Licensing
 
-In order to use the framework, you need license registered by Adidas. Please contact Jon Werner <Jon dot Werner at adidas dot com> for further details.
+In order to use the framework, you need license registered by Adidas. Please contact Jon Werner (Jon dot Werner at adidas dot com) for further details.
