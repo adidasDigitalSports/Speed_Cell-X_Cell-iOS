@@ -51,12 +51,13 @@
     // initiate async call
     [_licenseManager validateLicenseWithClientId:clientId clientSecret:clientSecret completion:^(BOOL success) {
     
-        // log result
-        NSLog(@"_licenseManager validateLicenseWithClientId %@", @(success));
+        // enable UI if valid, alert otherwise
         if (success) {
             
-            // enable UI
             [weakSelf didFinishLicensingSuccessfully];
+        }
+        else {
+            [weakSelf alertControllerWithTitle:@"Licensing" message:@"Licensing failed!"];
         }
     }];
 

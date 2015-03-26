@@ -15,7 +15,6 @@
 		7046A7BA1AA6A5310013A8AD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7046A7B91AA6A5310013A8AD /* Images.xcassets */; };
 		7046A7BD1AA6A5310013A8AD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7046A7BB1AA6A5310013A8AD /* LaunchScreen.xib */; };
 		7046A7D61AA6A58B0013A8AD /* ADIDeviceTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7046A7D51AA6A58B0013A8AD /* ADIDeviceTableViewCell.m */; };
-		705C826E1AB6C4A6008BD0A7 /* miCoachSensors.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70293C711AB6B2AE006C014B /* miCoachSensors.framework */; };
 		705C826F1AB6C4A6008BD0A7 /* miCoachSensors.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 70293C711AB6B2AE006C014B /* miCoachSensors.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
@@ -34,7 +33,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		70293C711AB6B2AE006C014B /* miCoachSensors.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = miCoachSensors.framework; sourceTree = "<group>"; };
+		70293C711AB6B2AE006C014B /* miCoachSensors.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = miCoachSensors.framework; path = ../Framework/miCoachSensors.framework; sourceTree = "<group>"; };
 		7046A7A91AA6A5310013A8AD /* ReferenceApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReferenceApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7046A7AD1AA6A5310013A8AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7046A7AE1AA6A5310013A8AD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -55,7 +54,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				70293C721AB6B2AE006C014B /* miCoachSensors.framework in Frameworks */,
-				705C826E1AB6C4A6008BD0A7 /* miCoachSensors.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,7 +130,7 @@
 		7046A7A11AA6A5310013A8AD /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0610;
+				LastUpgradeCheck = 0620;
 				ORGANIZATIONNAME = adidas;
 				TargetAttributes = {
 					7046A7A81AA6A5310013A8AD = {
@@ -290,7 +288,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/ReferenceApp",
-					"$(PROJECT_DIR)/../miCoachSensors/build/Release-Universal/**",
+					"$(PROJECT_DIR)/Framework/**",
 				);
 				INFOPLIST_FILE = ReferenceApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -305,7 +303,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/ReferenceApp",
-					"$(PROJECT_DIR)/../miCoachSensors/build/Release-Universal/**",
+					"$(PROJECT_DIR)/Framework/**",
 				);
 				INFOPLIST_FILE = ReferenceApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
