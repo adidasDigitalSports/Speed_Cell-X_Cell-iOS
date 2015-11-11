@@ -1,0 +1,27 @@
+var searchData=
+[
+  ['c_5fadispeedcellerrordifferentcrc',['c_ADISpeedCellErrorDifferentCRC',['../group___s_p_e_e_d_c_e_l_l___c_o_n_s_t_a_n_t_s.html#ggaccc9c875630e2cc0b883fb9860e147c8a3de285a96c4769a97d7a27304c149a33',1,'sc2constants.h']]],
+  ['c_5fadispeedcellerrornothing',['c_ADISpeedCellErrorNothing',['../group___s_p_e_e_d_c_e_l_l___c_o_n_s_t_a_n_t_s.html#ggaccc9c875630e2cc0b883fb9860e147c8a99f0697737412424fb5224479241097d',1,'sc2constants.h']]],
+  ['c_5fadixcelldevicestatusafjump',['c_ADIXCellDeviceStatusAFJump',['../xcell__constants_8h.html#a83534113af1608d93400d05a9b4faccba081123acb90d301977e60f24c0b36139',1,'xcell_constants.h']]],
+  ['c_5fadixcelldevicestatusafreactiontime',['c_ADIXCellDeviceStatusAFReactionTime',['../xcell__constants_8h.html#a83534113af1608d93400d05a9b4faccbad5466669b0983035f6ade41bfe7d1ed0',1,'xcell_constants.h']]],
+  ['c_5fadixcelldevicestatusafshuttle',['c_ADIXCellDeviceStatusAFShuttle',['../xcell__constants_8h.html#a83534113af1608d93400d05a9b4faccba67953068e7c4738f49c23311a37b349d',1,'xcell_constants.h']]],
+  ['c_5fadixcelldevicestatusradiohr',['c_ADIXCellDeviceStatusRadioHR',['../xcell__constants_8h.html#a83534113af1608d93400d05a9b4faccba7a1383fb7430f9fa2f2687f2f8b9ccaf',1,'xcell_constants.h']]],
+  ['c_5fadixcellerrordownloadsessionresponsefailure',['c_ADIXCellErrorDownloadSessionResponseFailure',['../xcell__constants_8h.html#a00c18351639f4337364fe5fec1a5cd5cac52eef27be47ea14fe0635d5d059f4bf',1,'xcell_constants.h']]],
+  ['c_5fadixcellerrorerasefailure',['c_ADIXCellErrorEraseFailure',['../xcell__constants_8h.html#a00c18351639f4337364fe5fec1a5cd5cad6ac00def03f60c68ffbd4cca69e51af',1,'xcell_constants.h']]],
+  ['c_5fadixcellerrorerasesessionresponsefailure',['c_ADIXCellErrorEraseSessionResponseFailure',['../xcell__constants_8h.html#a00c18351639f4337364fe5fec1a5cd5ca7d99d02ca0aa45f585f0026f2d3394c6',1,'xcell_constants.h']]],
+  ['c_5fadixcellerrorinternalinconsistencydownloadsessions',['c_ADIXCellErrorInternalInconsistencyDownloadSessions',['../xcell__constants_8h.html#a00c18351639f4337364fe5fec1a5cd5ca36faf24d916b3e04e45762fd6110f519',1,'xcell_constants.h']]],
+  ['c_5fadixcellerrorinvalidmode',['c_ADIXCellErrorInvalidMode',['../xcell__constants_8h.html#a00c18351639f4337364fe5fec1a5cd5cae2c2a7b80c6a29b66ca65276e452dc46',1,'xcell_constants.h']]],
+  ['c_5fadixcellerrorinvalidrequest',['c_ADIXCellErrorInvalidRequest',['../xcell__constants_8h.html#a00c18351639f4337364fe5fec1a5cd5ca8f025f3a11f61adb7e28d72d830b92e7',1,'xcell_constants.h']]],
+  ['c_5fadixcellerrornodataavailable',['c_ADIXCellErrorNoDataAvailable',['../xcell__constants_8h.html#a00c18351639f4337364fe5fec1a5cd5ca53c6fb5328c1b3cfabf43cb45099c7ca',1,'xcell_constants.h']]],
+  ['c_5fadixcellerrornodescription',['c_ADIXCellErrorNoDescription',['../xcell__constants_8h.html#a00c18351639f4337364fe5fec1a5cd5ca8932916da408ff3f5f041dac88f61a4a',1,'xcell_constants.h']]],
+  ['c_5fadixcellerrornotimplementedyet',['c_ADIXCellErrorNotImplementedYet',['../xcell__constants_8h.html#a00c18351639f4337364fe5fec1a5cd5cab837bca0be392fb77a49796006eddb0b',1,'xcell_constants.h']]],
+  ['c_5fadixcellerrorsensorlost',['c_ADIXCellErrorSensorLost',['../xcell__constants_8h.html#a00c18351639f4337364fe5fec1a5cd5ca15965268ebe36d28951c3cd360a66dbb',1,'xcell_constants.h']]],
+  ['c_5fadixcellpositionbelt',['c_ADIXCellPositionBelt',['../xcell__constants_8h.html#a1f488f49a2d9074f2575bbb3eb878e4aac20aad8460ce4245da45fa8f0c0ed158',1,'xcell_constants.h']]],
+  ['c_5fadixcellpositionchest',['c_ADIXCellPositionChest',['../xcell__constants_8h.html#a1f488f49a2d9074f2575bbb3eb878e4aa024fac9de6e9534b81954d530f76702d',1,'xcell_constants.h']]],
+  ['c_5fadixcellpositionneck',['c_ADIXCellPositionNeck',['../xcell__constants_8h.html#a1f488f49a2d9074f2575bbb3eb878e4aae40b40f2e80e1b3755bdfcbb23680c42',1,'xcell_constants.h']]],
+  ['c_5fadixcellrequestdevicestatusafjump',['c_ADIXCellRequestDeviceStatusAFJump',['../xcell__constants_8h.html#adb15b20e5411e576d0e362d0396d01dfa05556c3b524a9c7495ca19f922bc49ca',1,'xcell_constants.h']]],
+  ['c_5fadixcellrequestdevicestatusafreactiontime',['c_ADIXCellRequestDeviceStatusAFReactionTime',['../xcell__constants_8h.html#adb15b20e5411e576d0e362d0396d01dfa4932c4b4c007dd3a0b05c26d9bb7bf3f',1,'xcell_constants.h']]],
+  ['c_5fadixcellrequestdevicestatusafshuttle',['c_ADIXCellRequestDeviceStatusAFShuttle',['../xcell__constants_8h.html#adb15b20e5411e576d0e362d0396d01dfa372274d3db7a49975dc4c3d9887ed5a0',1,'xcell_constants.h']]],
+  ['c_5fadixcellrequestdevicestatusradiohr',['c_ADIXCellRequestDeviceStatusRadioHR',['../xcell__constants_8h.html#adb15b20e5411e576d0e362d0396d01dfa92ed5f4ba62604fd7ec5fe4a57528793',1,'xcell_constants.h']]],
+  ['c_5fadixcellrequestdevicestatussleep',['c_ADIXCellRequestDeviceStatusSleep',['../xcell__constants_8h.html#adb15b20e5411e576d0e362d0396d01dfae6b487551461a12411a12b518bf0870b',1,'xcell_constants.h']]]
+];
