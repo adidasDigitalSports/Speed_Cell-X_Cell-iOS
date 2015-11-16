@@ -1,7 +1,8 @@
 var searchData=
 [
-  ['jerkduration',['jerkDuration',['../interface_a_d_i_x_cell_sprint_event.html#aa929e2023f1749a194d42715d622fd73',1,'ADIXCellSprintEvent']]],
-  ['jumpevents',['jumpEvents',['../interface_a_d_i_x_cell_session.html#acb619910cab96ad242c0f35c57206006',1,'ADIXCellSession']]],
-  ['jumpheight',['jumpHeight',['../interface_a_d_i_x_cell_jump_event.html#a4d8846f87258efb1a743323418672d5c',1,'ADIXCellJumpEvent']]],
-  ['jumpmaxacceleration',['jumpMaxAcceleration',['../interface_a_d_i_x_cell_jump_event.html#a00955ea699313a5fd5311d2f99118509',1,'ADIXCellJumpEvent']]]
+  ['intervaldurationinseconds',['intervalDurationInSeconds',['../interface_a_d_i_fit_smart_workout_interval.html#a8b36d2e5d20286caca15fab5a72652ae',1,'ADIFitSmartWorkoutInterval']]],
+  ['intervalhustles',['intervalHustles',['../interface_a_d_i_x_cell_session.html#ad7fa47d9fb83505fe0c12d613d06b7cc',1,'ADIXCellSession']]],
+  ['intervals',['intervals',['../interface_a_d_i_fit_smart_workout.html#aea9ab60478550a8e462d48ef537a64f7',1,'ADIFitSmartWorkout']]],
+  ['isrecordvalid',['isRecordValid',['../interface_a_d_i_fit_smart_activity_record.html#a7cfdd4382b19aa7505f5f4d79b8f0333',1,'ADIFitSmartActivityRecord']]],
+  ['issessionvalid',['isSessionValid',['../interface_a_d_i_fit_smart_session.html#aa1e5ced2817771eef3e3c6786c9eb6a5',1,'ADIFitSmartSession']]]
 ];

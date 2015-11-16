@@ -1,4 +1,20 @@
 var searchData=
 [
-  ['quickness',['quickness',['../interface_a_d_i_x_cell_cut_event.html#ab44c1b3620dcd88850614a2e5c165cd3',1,'ADIXCellCutEvent::quickness()'],['../interface_a_d_i_x_cell_sprint_event.html#ab44c1b3620dcd88850614a2e5c165cd3',1,'ADIXCellSprintEvent::quickness()']]]
+  ['pace',['pace',['../interface_a_d_i_fit_smart_sensor_readings.html#a388c97c27e6944bb6baa9b0f22779884',1,'ADIFitSmartSensorReadings']]],
+  ['pacezonebluemininsecondsperkm',['paceZoneBlueMinInSecondsPerKM',['../interface_a_d_i_fit_smart_user_configuration.html#a6d24a26e6eae5d9881cbafe8bbfde01b',1,'ADIFitSmartUserConfiguration']]],
+  ['pacezonebluetopinsecondsperkm',['paceZoneBlueTopInSecondsPerKM',['../interface_a_d_i_fit_smart_user_configuration.html#af75ac731f04f3d68c871a1211e357616',1,'ADIFitSmartUserConfiguration']]],
+  ['pacezonegreentopinsecondsperkm',['paceZoneGreenTopInSecondsPerKM',['../interface_a_d_i_fit_smart_user_configuration.html#ae2a3a259c6de9281e29f1a446ba779a3',1,'ADIFitSmartUserConfiguration']]],
+  ['pacezoneredtopinsecondsperkm',['paceZoneRedTopInSecondsPerKM',['../interface_a_d_i_fit_smart_user_configuration.html#a3f612aa2e97378f3122d3572ca3ae08a',1,'ADIFitSmartUserConfiguration']]],
+  ['pacezoneyellowtopinsecondsperkm',['paceZoneYellowTopInSecondsPerKM',['../interface_a_d_i_fit_smart_user_configuration.html#a7fbdf985a0055fc3bf0cc7bc7bea8316',1,'ADIFitSmartUserConfiguration']]],
+  ['pair_3acompletion_3a',['pair:completion:',['../protocol_a_d_i_fit_smart_sensor_specific_protocol-p.html#a54320de679508bcdfed0bb6016ab54b1',1,'ADIFitSmartSensorSpecificProtocol-p']]],
+  ['pairwithuserconfiguration_3acompletion_3a',['pairWithUserConfiguration:completion:',['../protocol_a_d_i_fit_smart_sensor_specific_protocol-p.html#a924e1a33511cff457b839c2250514f98',1,'ADIFitSmartSensorSpecificProtocol-p']]],
+  ['parse_3a',['parse:',['../protocol_a_d_i_x_cell_business_rules_protocol-p.html#a9780427a208496eb7eb5a62954af3dd0',1,'ADIXCellBusinessRulesProtocol-p']]],
+  ['parsedirectorylist_3a',['parseDirectoryList:',['../protocol_a_d_i_x_cell_business_rules_protocol-p.html#ab35bd8704fdcd65405e07535b2236208',1,'ADIXCellBusinessRulesProtocol-p']]],
+  ['parsejumpeventfromdata_3awearingposition_3a',['parseJumpEventFromData:wearingPosition:',['../protocol_a_d_i_x_cell_business_rules_protocol-p.html#aa46dd569725b6bad4749444c6094aa73',1,'ADIXCellBusinessRulesProtocol-p']]],
+  ['parsereactiontimeeventfromdata_3a',['parseReactionTimeEventFromData:',['../protocol_a_d_i_x_cell_business_rules_protocol-p.html#a0390ea654b65cf3a1f0463d1fc2c8fa5',1,'ADIXCellBusinessRulesProtocol-p']]],
+  ['parseshuttleeventfromdata_3a',['parseShuttleEventFromData:',['../protocol_a_d_i_x_cell_business_rules_protocol-p.html#a114955ac568258aab2a460cc56050a4c',1,'ADIXCellBusinessRulesProtocol-p']]],
+  ['passphrase',['passphrase',['../structsc2sensor__context.html#afa38674271a4129b1be0c4e8bb95d202',1,'sc2sensor_context']]],
+  ['payload',['payload',['../structsc2request_queue.html#ab8f00cdfa61e5d9562bea0720fff782b',1,'sc2requestQueue::payload()'],['../structxcell__request__queue__element.html#a60800e910abecaaf3afea5c1533ec96a',1,'xcell_request_queue_element::payload()']]],
+  ['payloadlength',['payloadLength',['../structsc2request_queue.html#a2eead10869c5f921ef036aa656683cd5',1,'sc2requestQueue::payloadLength()'],['../structxcell__request__queue__element.html#a2eead10869c5f921ef036aa656683cd5',1,'xcell_request_queue_element::payloadLength()']]],
+  ['peripheral',['peripheral',['../interface_a_d_i_bluetooth_device.html#a41412756a2ea84458583ecc34e094500',1,'ADIBluetoothDevice::peripheral()'],['../protocol_a_d_i_bluetooth_device_protocol-p.html#a888c9727d2bc99ce68834e4fd7bff9b5',1,'ADIBluetoothDeviceProtocol-p::peripheral()']]]
 ];

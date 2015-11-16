@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['cbperipheral_28logging_29',['CBPeripheral(Logging)',['../category_c_b_peripheral_07_logging_08.html',1,'']]]
+  ['micoachsensorsui',['miCoachSensorsUI',['../interfacemi_coach_sensors_u_i.html',1,'']]],
+  ['micoachxcellbusinessrules',['miCoachXCellBusinessRules',['../interfacemi_coach_x_cell_business_rules.html',1,'']]]
 ];
