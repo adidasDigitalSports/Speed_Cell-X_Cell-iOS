@@ -7,17 +7,17 @@
 
 var indexSectionsWithContent =
 {
-  0: "_abcdefghijklmnpqrstuvwxy",
-  1: "acmsx",
+  0: "_abcdefghijklmnopqrstuvwxyz",
+  1: "amsx",
   2: "abmsx",
-  3: "acdefginprstvwx",
+  3: "acdefginprstuvwx",
   4: "_abcdefhiklmnprstuwy",
   5: "acdhrswx",
   6: "ac",
   7: "ac",
-  8: "abcdefhijlmpqrst",
+  8: "abcdefghijlmopqrstuvwz",
   9: "asx",
-  10: "msx",
+  10: "fmsx",
   11: "w"
 };
 

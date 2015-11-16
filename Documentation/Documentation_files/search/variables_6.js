@@ -4,5 +4,6 @@ var searchData=
   ['filesize',['fileSize',['../structsc2__directory_entry.html#a02f75786092d1cb5e26302ec679ac5d8',1,'sc2_directoryEntry']]],
   ['filetransferbuffer',['fileTransferBuffer',['../structxcell__context.html#a34768d494074b30189834af298a67f36',1,'xcell_context']]],
   ['filetype',['fileType',['../structsc2__directory_entry.html#a723bff92092409b59e91e033f27b8711',1,'sc2_directoryEntry']]],
-  ['flags',['flags',['../structsc2rsc__measurement__t.html#aa2585d779da0ab21273a8d92de9a0ebe',1,'sc2rsc_measurement_t']]]
+  ['flags',['flags',['../structsc2rsc__measurement__t.html#aa2585d779da0ab21273a8d92de9a0ebe',1,'sc2rsc_measurement_t']]],
+  ['foundation',['Foundation',['../_a_d_i_fit_smart_sensor_protocol_8h.html#ab15a25d2ee756af5a5d6adb0611256f3',1,'ADIFitSmartSensorProtocol.h']]]
 ];

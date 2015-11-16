@@ -27,21 +27,23 @@ FOUNDATION_EXPORT const unsigned char miCoachSensorsUIVersionString[];
  *
  *  Depending on the selected device type an element of the array could be raw binary NSData or a parsed session instance.
  *
+ *  @param userConfig   Optional user configuration, only needed for the FitSmart device.
  *  @param completion Block object to be executed on completion of download. This block has no return value and takes two arguments: the downloaded sessions and the error that occured during the process. If the process was successfull the error is nil, otherwise the sessions array is an empty instance of NSArray.
  *
  *  @return Returns a UINavigationViewConroller instance that should be presented.
  */
-+ (UINavigationController *)downloadSessionFromDevice:(void (^)(NSArray *sessions, NSError *error))completion;
++ (UINavigationController *)downloadSessionFromDeviceWithUserConfiguration:(ADIFitSmartUserConfiguration *)userConfig withCompletionHandler:(void (^)(NSArray *sessions, NSError *error))completion;
 
 /**
  *  @brief Instantiates a view controller with the given ADIGenerealDevice instance which manages to download sessions from the remote device while presenting progress.
  *
  *  @param device     Instance of an ADIGenerealDevice subclass which represents the remote device.
+ *  @param userConfig   Optional user configuration, only needed for the FitSmart device
  *  @param completion Block object to be executed on completion of download. This block has no return value and takes two arguments: the downloaded sessions and the error that occured during the process. If the process was successfull the error is nil, otherwise the sessions array is an empty instance of NSArray.
  *
  *  @return Returns a UIViewConroller instance that should be presented.
  */
-+ (UIViewController *)downloadSessionFromDevice:(id)device completion:(void (^)(NSArray *sessions, NSError *error))completion;
++ (UIViewController *)downloadSessionFromDevice:(id)device withUserConfiguration:(ADIFitSmartUserConfiguration *)userConfig withCompletionHandler:(void (^)(NSArray *sessions, NSError *error))completion;
 
 /**
  *  @brief Creates an ADIXCellDevice instance from the given serial number.
@@ -60,5 +62,15 @@ FOUNDATION_EXPORT const unsigned char miCoachSensorsUIVersionString[];
  *  @return Returns an ADISpeedCellDevice instance identified with the given serial number.
  */
 + (id)speedcellDeviceWithSerialNumber:(NSString *)serialNumber;
+
+/**
+ *  @brief Creates an ADIFitSmartDevice instance form the given serial number.
+ *
+ *  @param serialNumber A valid non nil serial number of the remote device.
+ *
+ *  @return Returns an ADIFitSmartDevice instance identified with the given serial number.
+ */
++ (id)fitSmartDeviceWithSerialNumber:(NSString *)serialNumber;
+
 
 @end

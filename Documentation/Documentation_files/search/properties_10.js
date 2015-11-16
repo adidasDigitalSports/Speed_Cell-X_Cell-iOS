@@ -1,0 +1,19 @@
+var searchData=
+[
+  ['serialnumber',['serialNumber',['../interface_a_d_i_bluetooth_device.html#a0db7c2d61197b23f4d76ac15e5da1f2e',1,'ADIBluetoothDevice::serialNumber()'],['../interface_a_d_i_general_device.html#a0db7c2d61197b23f4d76ac15e5da1f2e',1,'ADIGeneralDevice::serialNumber()'],['../interface_a_d_i_fit_smart_device_info.html#a0db7c2d61197b23f4d76ac15e5da1f2e',1,'ADIFitSmartDeviceInfo::serialNumber()']]],
+  ['sessionlength',['sessionLength',['../interface_a_d_i_x_cell_directory_entry.html#a20cbe19cbcdc582c209e3ed9089c772a',1,'ADIXCellDirectoryEntry']]],
+  ['sessionstartdate',['sessionStartDate',['../interface_a_d_i_x_cell_directory_entry.html#ac43f0f7352ff9ca8f8f431a72325287f',1,'ADIXCellDirectoryEntry']]],
+  ['showdoublemetricnames',['showDoubleMetricNames',['../interface_a_d_i_fit_smart_user_configuration.html#a324a79847b2f6ebf8dbd32c7f6708ada',1,'ADIFitSmartUserConfiguration']]],
+  ['softwarerevision',['softwareRevision',['../interface_a_d_i_fit_smart_device_info.html#adef232203899595d4c39c98f1c20726f',1,'ADIFitSmartDeviceInfo']]],
+  ['speed',['speed',['../interface_a_d_i_fit_smart_sensor_readings.html#a64162819ab42b0ff3b836b5bd0f941e5',1,'ADIFitSmartSensorReadings::speed()'],['../interface_a_d_i_fit_smart_session_data_point.html#a7f7e4724cf57d59513b39c5ecc81adc8',1,'ADIFitSmartSessionDataPoint::speed()']]],
+  ['splitmode',['splitMode',['../interface_a_d_i_fit_smart_user_configuration.html#ac287f4958473f88f6b813320f02db3ac',1,'ADIFitSmartUserConfiguration']]],
+  ['sprintevents',['sprintEvents',['../interface_a_d_i_x_cell_session.html#a1597298d7b2bbb004b3de90a3e7f4fac',1,'ADIXCellSession']]],
+  ['startdate',['startDate',['../interface_a_d_i_x_cell_session.html#a097c20d30a51ca25df44e715090cc10a',1,'ADIXCellSession']]],
+  ['startevent',['startEvent',['../interface_a_d_i_x_cell_session.html#a5ccba6a6db74b16ec0d7ddfb0f0d4441',1,'ADIXCellSession']]],
+  ['startworkouttimestamp',['startWorkoutTimestamp',['../interface_a_d_i_fit_smart_session.html#a633f6fc8135564322811b663df2ca63d',1,'ADIFitSmartSession']]],
+  ['steps',['steps',['../interface_a_d_i_fit_smart_activity_record_data_point.html#a06281296a309ea184cb69eb5a0cc3cab',1,'ADIFitSmartActivityRecordDataPoint::steps()'],['../interface_a_d_i_fit_smart_sensor_readings.html#a19fdd84d9e7902710c4089c13bbe31ca',1,'ADIFitSmartSensorReadings::steps()']]],
+  ['striderate',['strideRate',['../interface_a_d_i_fit_smart_sensor_readings.html#af536d8dddaf318ff861966fb84815805',1,'ADIFitSmartSensorReadings::strideRate()'],['../interface_a_d_i_fit_smart_session_data_point.html#a709c3378f3dd597a6df21400d4dc94aa',1,'ADIFitSmartSessionDataPoint::strideRate()']]],
+  ['sumaccelerationz',['sumAccelerationZ',['../interface_a_d_i_x_cell_jump_event.html#a701bbd1950886c3c958614af943f8f7b',1,'ADIXCellJumpEvent']]],
+  ['sumrezacceleration',['sumRezAcceleration',['../interface_a_d_i_x_cell_cut_event.html#affa2162da066af4d3014e27ea30a13d6',1,'ADIXCellCutEvent']]],
+  ['systemid',['systemId',['../interface_a_d_i_fit_smart_device_info.html#a848ab4a87b0d9e987614ec6f74052710',1,'ADIFitSmartDeviceInfo']]]
+];

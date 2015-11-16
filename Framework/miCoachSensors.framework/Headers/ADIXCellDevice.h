@@ -1,6 +1,6 @@
 #import <Foundation/Foundation.h>
 #import <miCoachSensors/miCoachInterfaces.h>
-#import "ADIGeneralDevice.h"
+#import <miCoachSensors/ADIGeneralDevice.h>
 
 /**
  *  @brief Here you can find the documentation of how to make actions with the physical XCell device.

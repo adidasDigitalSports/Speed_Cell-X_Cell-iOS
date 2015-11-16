@@ -23,7 +23,7 @@ class MasterViewController: UITableViewController, ADIBluetoothDelegate {
         super.viewDidLoad()
         
         // validate license - you need to fill your license info
-        licensing.validateLicenseWithClientId("<Your client id here>", clientSecret : "<Your client secret here>") { [weak self] (success : Bool) -> Void in
+        licensing.validateLicenseWithClientId("<Your client id>", clientSecret : "<Your client secret>") { [weak self] (success : Bool) -> Void in
         
             // display if validation was successful
             let alertView = UIAlertView(title: "Licensing", message: (success ? "Success" : "Failed"), delegate: nil, cancelButtonTitle: "OK")
@@ -38,7 +38,7 @@ class MasterViewController: UITableViewController, ADIBluetoothDelegate {
                     strongSelf.bluetooth.bluetoothDelegate = self
                     
                     // look for SPEED_CELL only
-                    strongSelf.bluetooth.startDiscoveryWithFilter(ADIDiscoveryFilter(deviceType: ADIBluetoothDeviceTypeSpeedCell))
+                    strongSelf.bluetooth.startDiscoveryWithFilter(ADIDiscoveryFilter(deviceType: ADIBluetoothDeviceTypeGeneric))
                 }
             }
         }
@@ -76,8 +76,12 @@ class MasterViewController: UITableViewController, ADIBluetoothDelegate {
     
     // table view delegate : handle tap on cell
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-
-        self.performSegueWithIdentifier("showDetail", sender: self);
+        let index = self.tableView.indexPathForSelectedRow!.row
+        if let _ = sensors[index] as? ADIBluetoothDeviceFitSmart {
+            self.performSegueWithIdentifier("testFitSmart", sender: self);
+        } else {
+            self.performSegueWithIdentifier("showDetail", sender: self);
+        }
     }
     
     // pass the sensor to the next view controller
@@ -87,9 +91,14 @@ class MasterViewController: UITableViewController, ADIBluetoothDelegate {
         bluetooth.stopDiscovery()
         
         // pass sensor info
-        let index = self.tableView.indexPathForSelectedRow()!.row
-        let detailViewController = segue.destinationViewController as DetailViewController
-        detailViewController.sensor = sensors[index]
+        let index = self.tableView.indexPathForSelectedRow!.row
+        if (segue.identifier == "testFitSmart") {
+            let fitSmartViewController = segue.destinationViewController as! FitSmartViewController
+            fitSmartViewController.sensor = sensors[index]
+        } else {
+            let detailViewController = segue.destinationViewController as! DetailViewController
+            detailViewController.sensor = sensors[index]
+        }
     }
 
 }

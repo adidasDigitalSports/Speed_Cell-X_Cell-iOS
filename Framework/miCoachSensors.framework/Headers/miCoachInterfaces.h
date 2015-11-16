@@ -21,6 +21,12 @@
 #import <miCoachSensors/ADISpeedCellSensorSpecificProtocol.h>
 #import <miCoachSensors/ADISpeedCellBusinessRulesProtocol.h>
 
+// FitSmart
+#import <miCoachSensors/ADIFitSmartSensorProtocol.h>
+#import <miCoachSensors/ADIFitSmartSensorSpecificProtocol.h>
+#import <miCoachSensors/ADIFitSmartRelatedTypes.h>
+#import <miCoachSensors/ADIFitSmartDualModeProtocol.h>
+
 // Features
 #import <miCoachSensors/ADISensorTimeProtocol.h>
 #import <miCoachSensors/ADIDownloadSessionsProtocol.h>

@@ -10,7 +10,7 @@ typedef enum : NSUInteger {
     ADIBluetoothDeviceTypeGeneric,
     ADIBluetoothDeviceTypeXCell,
     ADIBluetoothDeviceTypeSpeedCell,
-    ADIBluetoothDeviceTypeBatelli,
+    ADIBluetoothDeviceTypeFitSmart,
     ADIBluetoothDeviceTypeBTLEHRM,
     ADIBluetoothDeviceTypeSCV1
 } ADIBluetoothDeviceType;

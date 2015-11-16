@@ -23,7 +23,7 @@ class DetailViewController: UIViewController, ADIGeneralDeviceDelegate {
     @IBAction func downloadSessionsTouchUpInside(sender: AnyObject) {
         
         // create the SPEED_CELL specific interface
-        speedCell = miCoachSensorsUI.speedcellDeviceWithSerialNumber(sensor.serialNumber) as ADISpeedCellDevice
+        speedCell = miCoachSensorsUI.speedcellDeviceWithSerialNumber(sensor.serialNumber) as! ADISpeedCellDevice
         
         // delegate for bluetooth callbacks
         speedCell.delegate = self
@@ -40,7 +40,7 @@ class DetailViewController: UIViewController, ADIGeneralDeviceDelegate {
         statusLabel.hidden = false
         
         // initiate session download
-        speedCell.downloadSessions { [weak self] (sessions : [AnyObject]!, error : NSError!) -> Void in
+        speedCell.downloadSessions { (sessions : [AnyObject]!, error : NSError!) -> Void in
             
             // display results
             let alertView = UIAlertView(title: "Download", message: "\(sessions.count) sessions downloaded", delegate: nil, cancelButtonTitle: "OK")

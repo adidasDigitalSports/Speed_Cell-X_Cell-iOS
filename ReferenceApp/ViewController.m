@@ -2,11 +2,14 @@
 #import <miCoachSensors/miCoachSensors.h>
 #import "ViewController.h"
 #import "ADIDeviceTableViewCell.h"
+#import "ADIFitSmartFeatureExamplesViewController.h"
 
 /**
  *  Private part of the example view controller.
  */
 @interface ViewController () <UITableViewDataSource, UITableViewDelegate, ADIGeneralDeviceDelegate>
+
+@property (strong, nonatomic) ADIFitSmartUserConfiguration *userConfigForFitSmart;
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (weak, nonatomic) IBOutlet UIButton *pairButton;
@@ -16,6 +19,7 @@
 @property (strong, nonatomic) NSMutableArray *devices;
 @property (strong, nonatomic) NSMutableDictionary *progressViews;
 
+@property (strong, nonatomic) ADIGeneralDevice *selectedDevice;
 @end
 
 /**
@@ -24,6 +28,8 @@
 @implementation ViewController {
     
     ADILicenseManager *_licenseManager;
+    
+    BOOL _isConnecting;
 }
 
 /**
@@ -33,15 +39,20 @@
     
     // call super
     [super viewDidLoad];
-
-    // alloc ivars
+    
+    // setup ivars
+    _tableView.delegate = self;
     _devices = [NSMutableArray array];
     _progressViews = [NSMutableDictionary dictionary];
     
     // licensing details
-    NSString *clientId = @"<Your client id here>";
-    NSString *clientSecret = @"<Your client secret here>";
-    
+    NSString *clientId = @"<Your client id>";
+    NSString *clientSecret = @"<Your client secret>";
+
+    // user configuration must be uploaded if the FitSmart is in factory reset state
+    self.userConfigForFitSmart = [[ADIFitSmartUserConfiguration alloc] init];
+    self.userConfigForFitSmart.uniqueUserIdentifier = @123;
+
     // weak self in closure block
     __weak typeof(self) weakSelf = self;
     
@@ -51,18 +62,26 @@
     // initiate async call
     [_licenseManager validateLicenseWithClientId:clientId clientSecret:clientSecret completion:^(BOOL success) {
     
-        // enable UI if valid, alert otherwise
+        // log result
+        NSLog(@"_licenseManager validateLicenseWithClientId %@", @(success));
         if (success) {
             
+            // enable UI
             [weakSelf didFinishLicensingSuccessfully];
-        }
-        else {
-            [weakSelf alertControllerWithTitle:@"Licensing" message:@"Licensing failed!"];
         }
     }];
 
     // subscribe to applicationDidEnterBackground
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(applicationDidEnterBackground:) name:UIApplicationDidEnterBackgroundNotification object:nil];
+}
+
+- (void) viewWillAppear:(BOOL)animated {
+    
+    [super viewWillAppear:animated];
+    
+    if (self.selectedDevice) {
+        self.selectedDevice.delegate = self;
+    }
 }
 
 /**
@@ -132,6 +151,13 @@
             device.delegate = self;
             [_devices addObject:device];
         }
+        else if ([persistedDevices[serialNumber] isEqualToString:NSStringFromClass([ADIFitSmartDevice class])]) {
+            
+            // add FitSmart
+            ADIGeneralDevice *device = [miCoachSensorsUI fitSmartDeviceWithSerialNumber:serialNumber];
+            device.delegate = self;
+            [_devices addObject:device];
+        }
     }
 }
 
@@ -141,16 +167,22 @@
  *  @param button The Button sending the event.
  */
 - (void)connectButtonClicked:(UIButton *)button {
-
-    // get the device from button
-    ADIGeneralDevice *device = _devices[button.tag];
     
-    // disable button
-    button.enabled = NO;
-    
-    // allow reconnect and initiate the connection
-    device.autoReconnect = YES;
-    [device connect];
+    if (!_isConnecting) {
+        
+        // while connecting we disable table view cell interaction
+        _isConnecting = YES;
+        
+        // get the device from button
+        ADIGeneralDevice *device = _devices[button.tag];
+        
+        // disable button
+        button.enabled = NO;
+        
+        // allow reconnect and initiate the connection
+        device.autoReconnect = YES;
+        [device connect];
+    }
 }
 
 /**
@@ -167,7 +199,7 @@
     ADIGeneralDevice *device = _devices[button.tag];
 
     // use miCoachSensorsUI to show built-in UI while downloading
-    UIViewController *viewController = [miCoachSensorsUI downloadSessionFromDevice:device completion:^(NSArray *sessions, NSError *error) {
+    UIViewController *viewController = [miCoachSensorsUI downloadSessionFromDevice:device withUserConfiguration:self.userConfigForFitSmart withCompletionHandler:^(NSArray *sessions, NSError *error) {
         
         // this closure called when async download finished, we just log the result
         [weakSelf showSessionDownloadedAlertView:sessions error:error];
@@ -278,16 +310,28 @@
 
 - (void)showSessionDownloadedAlertView:(NSArray *)sessions error:(NSError *)error {
     
-    NSLog(@"error: %@ sessions: %@", error, sessions);
-    
     // display results
     if (error == nil) {
         
+        // if error is nil, operation was successful
         [self alertControllerWithTitle:@"Sync successful" message:[NSString stringWithFormat:@"%d sessions downloaded.", (int)sessions.count]];
     }
     else {
         
+        // if error not nil, display the error message
         [self alertControllerWithTitle:@"Sync failed" message:[NSString stringWithFormat:@"Error: %@", error]];
+    }
+}
+
+- (void)disconnectAllDevices {
+    
+    // iterate over all devices
+    for (ADIGeneralDevice<ADIDownloadSessionsProtocol> *device in _devices) {
+        
+        // disconnect if it is connected
+        if (device.isConnected) {
+            [device disconnectWithCompletionHandler:nil];
+        }
     }
 }
 
@@ -297,15 +341,25 @@
  *  @param sender The object initiated the event handler.
  */
 - (IBAction)syncDevice:(id)sender {
-    
+
+    // miCoachSensorsUI will estabilish connection on its own
+    [self disconnectAllDevices];
+ 
     // use weak self in blocks
     __weak typeof(self) weakSelf = self;
 
     // create the view controller
-    UIViewController *viewController = [miCoachSensorsUI downloadSessionFromDevice:^(NSArray *sessions, NSError *error) {
+    UIViewController *viewController = [miCoachSensorsUI downloadSessionFromDeviceWithUserConfiguration:self.userConfigForFitSmart withCompletionHandler:^(NSArray *sessions, NSError *error) {
         
+        // display alert view
         [weakSelf showSessionDownloadedAlertView:sessions error:error];
+        
+        // for FitSmart we need to call endSync
+        if (weakSelf.selectedDevice != nil &&  [weakSelf.selectedDevice class] == [ADIFitSmartDevice class]) {
+            [((ADIFitSmartDevice *) weakSelf.selectedDevice) endSync:nil];
+        }
     }];
+
     
     // and display it
     [self presentViewController:viewController animated:YES completion:nil];
@@ -343,6 +397,9 @@
                 }
             }];
 
+            if ([device class] == [ADIFitSmartDevice class]) {
+                [((ADIFitSmartDevice *) device) startSync];
+            }
             // intiate the download itself
             [device downloadSessions:^(NSArray *rawSessions, NSError *error) {
                 
@@ -364,6 +421,9 @@
  *  @param error    In case of error, the details stored here.
  */
 - (void)device:(ADIGeneralDevice *)device didDownloadSessions:(NSArray *)sessions error:(NSError *)error {
+    if ([device class] == [ADIFitSmartDevice class]) {
+        [((ADIFitSmartDevice *) device) endSync:nil];
+    }
 
     // hide progressbar
     NSUInteger index = [_devices indexOfObject:device];
@@ -371,7 +431,6 @@
     
     // log results
     NSLog(@"Device with serial number %@ has session count: %lu", device.serialNumber, (unsigned long)sessions.count);
-    NSLog(@"Error: %@", error);
 }
 
 #pragma mark - UITableView DataSource
@@ -403,7 +462,7 @@
     ADIDeviceTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kADIDeviceTableViewCellIdentifier];
 
     // text is the serial number
-    cell.textLabel.text = [_devices[indexPath.row] serialNumber];
+    cell.deviceIdLabel.text = [_devices[indexPath.row] serialNumber];
     
     // save row index in tags
     cell.connectButton.tag = indexPath.row;
@@ -517,6 +576,51 @@
     
 }
 
+#pragma mark - UITableView delegate
+
+- (NSIndexPath *)tableView:(UITableView *)tableView willSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    // we allow to connect only to one FitSmart at a time, so we disable interaction while connecting
+    NSString *classString = NSStringFromClass([_devices[indexPath.row] class]);
+    return (!_isConnecting && [classString isEqualToString:@"ADIFitSmartDevice"]) ? indexPath : nil;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    // when FitSmart sensors cell selected, we go to a details page
+    [tableView deselectRowAtIndexPath:indexPath animated:NO];
+    _selectedDevice = _devices[indexPath.row];
+    [self performSegueWithIdentifier:@"showDetails" sender:self];
+    
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    
+    // we pass the sensor and userConfig to the detail page
+    if ([segue.destinationViewController isKindOfClass:[ADIFitSmartFeatureExamplesViewController class]]) {
+     
+        ADIFitSmartFeatureExamplesViewController *fitSmartFeatureExamplesViewController = (ADIFitSmartFeatureExamplesViewController *)segue.destinationViewController;
+        fitSmartFeatureExamplesViewController.device = (ADIFitSmartDevice *)_selectedDevice;
+        fitSmartFeatureExamplesViewController.userConfigForFitSmart = self.userConfigForFitSmart;
+    }
+}
+
+- (void)handlePairingFailed:(ADIGeneralDevice *)device withMessage:(NSString*)message {
+    
+    // if pair was not successful, we sho alert and disconnect
+    [self alertControllerWithTitle:@"Pair device failed!" message:message];
+    if (device.isConnected) {
+        [device disconnectWithCompletionHandler:nil];
+    }
+}
+
+- (void)handlePairingSuccess:(ADIGeneralDevice *)device {
+    
+    // if pair was successful, we update the proper cell
+    NSUInteger index = [_devices indexOfObject:device];
+    [self.tableView reloadRowsAtIndexPaths:@[[NSIndexPath indexPathForRow:index inSection:0]] withRowAnimation:UITableViewRowAnimationAutomatic];
+}
+
 #pragma mark - Device delegate methods
 
 /**
@@ -526,8 +630,37 @@
  */
 - (void)deviceDidConnect:(ADIGeneralDevice *)device {
 
-    NSUInteger index = [_devices indexOfObject:device];
-    [self.tableView reloadRowsAtIndexPaths:@[[NSIndexPath indexPathForRow:index inSection:0]] withRowAnimation:UITableViewRowAnimationAutomatic];
+    // avoid retain self
+    __weak typeof(self) weakSelf = self;
+
+    // For FitSmart we need few extra steps after connection
+    if ([device class] == [ADIFitSmartDevice class]) {
+        
+        ADIFitSmartDevice *fitSmart = (ADIFitSmartDevice *)device;
+        
+        // FitSmart need to be paired first with the proper identifier and need to receive user configuration after it was paired for the first time
+        [fitSmart pairWithUserConfiguration:self.userConfigForFitSmart completion:^(NSError *error) {
+
+            if (error == nil) {
+                
+                // refresh UI
+                [weakSelf handlePairingSuccess:device];
+                
+            } else {
+                
+                // show alert view with error details
+                [weakSelf handlePairingFailed:device withMessage:error.localizedDescription];
+            }
+        }];
+    }
+    else {
+        
+        // refresh UI
+        [self handlePairingSuccess:device];
+    }
+    
+    // we are allowed to select another FitSmart from now on
+    _isConnecting = NO;
 }
 
 /**
@@ -542,6 +675,7 @@
     
     // if we know this device, then we update the table view
     if (index != NSNotFound) {
+        
         [self.tableView reloadRowsAtIndexPaths:@[[NSIndexPath indexPathForRow:index inSection:0]] withRowAnimation:UITableViewRowAnimationAutomatic];
     }
 }
@@ -562,6 +696,9 @@
     
     // update the table view
     [self.tableView reloadRowsAtIndexPaths:@[[NSIndexPath indexPathForRow:index inSection:0]] withRowAnimation:UITableViewRowAnimationAutomatic];
+    
+    // allow tap on FitSmart connect again
+    _isConnecting = NO;
 }
 
 @end

@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		70293C721AB6B2AE006C014B /* miCoachSensors.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70293C711AB6B2AE006C014B /* miCoachSensors.framework */; };
+		0BDF7E2B1BE27DF400DC1E2A /* ADIFitSmartFeaturesExamplesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BDF7E271BE27DF400DC1E2A /* ADIFitSmartFeaturesExamplesViewController.m */; };
+		0BDF7E2C1BE27DF400DC1E2A /* ADIFitSmartFeatureExamples.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BDF7E291BE27DF400DC1E2A /* ADIFitSmartFeatureExamples.m */; };
+		0BFC18DC1BE3C14700953F82 /* miCoachSensors.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BFC18DB1BE3C14700953F82 /* miCoachSensors.framework */; };
+		0BFC18DD1BE3C15300953F82 /* miCoachSensors.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0BFC18DB1BE3C14700953F82 /* miCoachSensors.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7046A7AF1AA6A5310013A8AD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7046A7AE1AA6A5310013A8AD /* main.m */; };
 		7046A7B21AA6A5310013A8AD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7046A7B11AA6A5310013A8AD /* AppDelegate.m */; };
 		7046A7B51AA6A5310013A8AD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7046A7B41AA6A5310013A8AD /* ViewController.m */; };
@@ -15,17 +18,16 @@
 		7046A7BA1AA6A5310013A8AD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7046A7B91AA6A5310013A8AD /* Images.xcassets */; };
 		7046A7BD1AA6A5310013A8AD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7046A7BB1AA6A5310013A8AD /* LaunchScreen.xib */; };
 		7046A7D61AA6A58B0013A8AD /* ADIDeviceTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7046A7D51AA6A58B0013A8AD /* ADIDeviceTableViewCell.m */; };
-		705C826F1AB6C4A6008BD0A7 /* miCoachSensors.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 70293C711AB6B2AE006C014B /* miCoachSensors.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		70B7120F1AA6B6DA00245F76 /* Embed Frameworks */ = {
+		707754231ABB27990075D381 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				705C826F1AB6C4A6008BD0A7 /* miCoachSensors.framework in Embed Frameworks */,
+				0BFC18DD1BE3C15300953F82 /* miCoachSensors.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -33,7 +35,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		70293C711AB6B2AE006C014B /* miCoachSensors.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = miCoachSensors.framework; path = ../Framework/miCoachSensors.framework; sourceTree = "<group>"; };
+		0BDF7E261BE27DF400DC1E2A /* ADIFitSmartFeatureExamplesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADIFitSmartFeatureExamplesViewController.h; sourceTree = "<group>"; };
+		0BDF7E271BE27DF400DC1E2A /* ADIFitSmartFeaturesExamplesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADIFitSmartFeaturesExamplesViewController.m; sourceTree = "<group>"; };
+		0BDF7E281BE27DF400DC1E2A /* ADIFitSmartFeatureExamples.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADIFitSmartFeatureExamples.h; sourceTree = "<group>"; };
+		0BDF7E291BE27DF400DC1E2A /* ADIFitSmartFeatureExamples.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADIFitSmartFeatureExamples.m; sourceTree = "<group>"; };
+		0BFC18DB1BE3C14700953F82 /* miCoachSensors.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = miCoachSensors.framework; path = Framework/miCoachSensors.framework; sourceTree = SOURCE_ROOT; };
 		7046A7A91AA6A5310013A8AD /* ReferenceApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReferenceApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7046A7AD1AA6A5310013A8AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7046A7AE1AA6A5310013A8AD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -53,13 +59,33 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				70293C721AB6B2AE006C014B /* miCoachSensors.framework in Frameworks */,
+				0BFC18DC1BE3C14700953F82 /* miCoachSensors.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B7027591BC3D55900C588FB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0BFC18DB1BE3C14700953F82 /* miCoachSensors.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0BDF7E251BE27DF400DC1E2A /* ADIFitSmartFeatureExamples */ = {
+			isa = PBXGroup;
+			children = (
+				0BDF7E281BE27DF400DC1E2A /* ADIFitSmartFeatureExamples.h */,
+				0BDF7E291BE27DF400DC1E2A /* ADIFitSmartFeatureExamples.m */,
+				0BDF7E261BE27DF400DC1E2A /* ADIFitSmartFeatureExamplesViewController.h */,
+				0BDF7E271BE27DF400DC1E2A /* ADIFitSmartFeaturesExamplesViewController.m */,
+			);
+			name = ADIFitSmartFeatureExamples;
+			path = ADIFitSmartFeatureTestExamples;
+			sourceTree = "<group>";
+		};
 		7046A7A01AA6A5310013A8AD = {
 			isa = PBXGroup;
 			children = (
@@ -85,10 +111,11 @@
 				7046A7D51AA6A58B0013A8AD /* ADIDeviceTableViewCell.m */,
 				7046A7B31AA6A5310013A8AD /* ViewController.h */,
 				7046A7B41AA6A5310013A8AD /* ViewController.m */,
+				0BDF7E251BE27DF400DC1E2A /* ADIFitSmartFeatureExamples */,
 				7046A7B61AA6A5310013A8AD /* Main.storyboard */,
 				7046A7B91AA6A5310013A8AD /* Images.xcassets */,
 				7046A7BB1AA6A5310013A8AD /* LaunchScreen.xib */,
-				70293C711AB6B2AE006C014B /* miCoachSensors.framework */,
+				0B7027591BC3D55900C588FB /* Frameworks */,
 				7046A7AC1AA6A5310013A8AD /* Supporting Files */,
 			);
 			path = ReferenceApp;
@@ -113,7 +140,7 @@
 				7046A7A51AA6A5310013A8AD /* Sources */,
 				7046A7A61AA6A5310013A8AD /* Frameworks */,
 				7046A7A71AA6A5310013A8AD /* Resources */,
-				70B7120F1AA6B6DA00245F76 /* Embed Frameworks */,
+				707754231ABB27990075D381 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,11 +157,12 @@
 		7046A7A11AA6A5310013A8AD /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0620;
+				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = adidas;
 				TargetAttributes = {
 					7046A7A81AA6A5310013A8AD = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = HCLD24CTXT;
 					};
 				};
 			};
@@ -175,8 +203,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				7046A7D61AA6A58B0013A8AD /* ADIDeviceTableViewCell.m in Sources */,
+				0BDF7E2C1BE27DF400DC1E2A /* ADIFitSmartFeatureExamples.m in Sources */,
 				7046A7B51AA6A5310013A8AD /* ViewController.m in Sources */,
 				7046A7B21AA6A5310013A8AD /* AppDelegate.m in Sources */,
+				0BDF7E2B1BE27DF400DC1E2A /* ADIFitSmartFeaturesExamplesViewController.m in Sources */,
 				7046A7AF1AA6A5310013A8AD /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -222,6 +252,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -264,6 +295,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -285,14 +317,24 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_RESOURCE_RULES_PATH = "$(SDKROOT)/ResourceRules.plist";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/ReferenceApp",
 					"$(PROJECT_DIR)/Framework/**",
+					"$(PROJECT_DIR)/Framework",
 				);
 				INFOPLIST_FILE = ReferenceApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/../../../miCoachSpeedCellBusinessRules";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -300,14 +342,23 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_RESOURCE_RULES_PATH = "$(SDKROOT)/ResourceRules.plist";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/ReferenceApp",
 					"$(PROJECT_DIR)/Framework/**",
+					"$(PROJECT_DIR)/Framework",
 				);
 				INFOPLIST_FILE = ReferenceApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

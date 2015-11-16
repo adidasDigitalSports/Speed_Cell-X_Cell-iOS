@@ -47,8 +47,14 @@
  */
 - (void)setHandlerForDownloadProgressChange:(void (^)(NSInteger progress))handler withNotificationLimit:(NSUInteger)limit;
 
+/**
+ *  @brief  Continues all session download.
+ */
 - (void)continueDownloadAll;
 
+/**
+ *  @brief  Aborts all session download.
+ */
 - (void)abortDownloadAll;
 
 /**

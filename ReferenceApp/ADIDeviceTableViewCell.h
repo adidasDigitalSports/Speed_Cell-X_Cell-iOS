@@ -10,6 +10,7 @@ extern NSString *const kADIDeviceTableViewCellIdentifier;
  */
 @interface ADIDeviceTableViewCell : UITableViewCell
 
+@property (weak, nonatomic) IBOutlet UILabel *deviceIdLabel;
 @property (weak, nonatomic) IBOutlet UIButton *connectButton;
 @property (weak, nonatomic) IBOutlet UIButton *syncButton;
 @property (weak, nonatomic) IBOutlet UIProgressView *progressView;

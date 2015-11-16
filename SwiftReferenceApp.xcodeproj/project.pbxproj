@@ -15,6 +15,7 @@
 		7084D85B1ABF93A4008ECBE5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7084D8591ABF93A4008ECBE5 /* LaunchScreen.xib */; };
 		7084D8721ABF9888008ECBE5 /* miCoachSensors.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7084D8701ABF97B5008ECBE5 /* miCoachSensors.framework */; };
 		7084D8731ABF9888008ECBE5 /* miCoachSensors.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7084D8701ABF97B5008ECBE5 /* miCoachSensors.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		70D35D691BFA8DFA00F636F3 /* FitSmartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E9A6E11BE90A7400524345 /* FitSmartViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -41,6 +42,7 @@
 		7084D8571ABF93A4008ECBE5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		7084D85A1ABF93A4008ECBE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		7084D8701ABF97B5008ECBE5 /* miCoachSensors.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = miCoachSensors.framework; path = ../Framework/miCoachSensors.framework; sourceTree = "<group>"; };
+		D1E9A6E11BE90A7400524345 /* FitSmartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FitSmartViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 				7084D84E1ABF93A4008ECBE5 /* AppDelegate.swift */,
 				7084D8501ABF93A4008ECBE5 /* MasterViewController.swift */,
 				7084D8521ABF93A4008ECBE5 /* DetailViewController.swift */,
+				D1E9A6E11BE90A7400524345 /* FitSmartViewController.swift */,
 				7084D8541ABF93A4008ECBE5 /* Main.storyboard */,
 				7084D8571ABF93A4008ECBE5 /* Images.xcassets */,
 				7084D8591ABF93A4008ECBE5 /* LaunchScreen.xib */,
@@ -121,7 +124,9 @@
 		7084D8411ABF93A4008ECBE5 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0620;
+				LastSwiftMigration = 0710;
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = adidas;
 				TargetAttributes = {
 					7084D8481ABF93A4008ECBE5 = {
@@ -165,6 +170,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70D35D691BFA8DFA00F636F3 /* FitSmartViewController.swift in Sources */,
 				7084D8531ABF93A4008ECBE5 /* DetailViewController.swift in Sources */,
 				7084D8511ABF93A4008ECBE5 /* MasterViewController.swift in Sources */,
 				7084D84F1ABF93A4008ECBE5 /* AppDelegate.swift in Sources */,
@@ -213,6 +219,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -277,10 +284,11 @@
 				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/IvanMarinov/Projects/adi-msdk/code/miCoachSensors/iOS/SwiftReferenceApp/Framework",
+					Framework,
 				);
 				INFOPLIST_FILE = SwiftReferenceApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.adidas.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -293,10 +301,11 @@
 				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/IvanMarinov/Projects/adi-msdk/code/miCoachSensors/iOS/SwiftReferenceApp/Framework",
+					Framework,
 				);
 				INFOPLIST_FILE = SwiftReferenceApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.adidas.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

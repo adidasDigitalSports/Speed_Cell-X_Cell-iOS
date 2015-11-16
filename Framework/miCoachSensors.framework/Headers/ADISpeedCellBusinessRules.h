@@ -6,22 +6,28 @@
 
 
 /**
- Public facade for SPEED_CELL business rules - DLE implementation.
+ * @brief This class can parse a session downloaded from SPEED_CELL sensor.
+ * @discussion Besides parsing the binary data downloaded from the SPEED_CELL sensor and creating ADISpeedCellSession objects, this class
+ * provides more metrics, derived from the parsed session. This metrics are sport type specific values, like "bursts" for basketball. 
+ * If persistency is needed for these values, it is enough to persist only sessionRecordArray containing ADISpeedCellSessionRecord objects,
+ * because you can initialize this class with sessionRecordArray and derived values can be recalculated on demand.
  */
 @interface ADISpeedCellBusinessRules : NSObject
 
 /**
- Initializer, calling it will initialize this object to be able to provide calculated metrics.
- Input is parsed first, then general calculations applied.
- Call calculateInfoForBasketball method to calculate basketball game specific metrics.
+ @brief Initializer, calling it will initialize this object to be able to provide calculated metrics.
+ @discussion Input is parsed first, then general calculations applied.
+ Call calculateInfoForBasketball, calculateInfoForTennis or calculateInfoForFootball method to calculate game specific metrics.
  
  @param session Raw binary file downloaded from SPEED_CELL.
 */
 - (id)initWithSpeedCellRawSession:(NSData *)session;
 
 /**
- 
- Designed initializer with time-correction calculation.
+ @brief Designed initializer with time-correction calculation.
+ @discussion This initializer is useful when the SPEED_CELL recorded a session after battery replacement. In such case, timestamp values
+ for data points will be invalid (relative time elapsed in addition to factory default, which is unix epoch time). Using this initializer
+ timestamps will be fixed, using time retrieved from sensor, and current local time.
  
  @param session     Raw binary file downloaded from SPEED_CELL.
  @param sensorTime  Time from sensor's internal clock
@@ -32,17 +38,19 @@
 - (id)initWithSpeedCellRawSession:(NSData *)session withSensorTime:(NSDate *)sensorTime withCurrentTime:(NSDate *)currentTime;
 
 /**
- Initialize object with session record array.
+ @brief Initialize object with session record array.
+ @discussion This method can be used to initialize the object from a previously parsed session, provided by the sessionRecordArray method.
+ The sessionRecordArray is sufficient to be persisted, so later all derived values can be recalculated.
  
- @param sessionRecordArray Array returned by self.sessionRecordArray method.
+ @param sessionRecordArray Array returned by sessionRecordArray method.
  */
 - (id)initWithSessionRecordArray:(NSArray *)sessionRecordArray;
 
 /**
- This method must be called before zone related calls to use correct zone threshold settings.
+ This method must be called before zone related calls in order to use correct zone threshold settings.
  
  @param ageInYears User's age in years.
- @param gender User's gender: 0 = male, 1 = female.
+ @param gender     User's gender: 0 = male, 1 = female.
  @param speedZones The user's speed zones.
  */
 - (void)setupZonesWithAge:(int)ageInYears withGender:(ADISpeedCellGender)gender withSpeedZones:(ADISpeedCellZoneInfo *)speedZones;
@@ -144,7 +152,7 @@
 
 - (int)numberOfSprints;
 
-// array of DLESessionRecord
+// array of ADISessionRecord
 - (NSArray *)sessionRecordArray;
 
 // array of NSNumbers ("@max.floatValue" should match self.maxGameSpeed)

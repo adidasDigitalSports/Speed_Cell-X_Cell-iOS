@@ -1,5 +1,7 @@
 var searchData=
 [
+  ['pair_3acompletion_3a',['pair:completion:',['../protocol_a_d_i_fit_smart_sensor_specific_protocol-p.html#a54320de679508bcdfed0bb6016ab54b1',1,'ADIFitSmartSensorSpecificProtocol-p']]],
+  ['pairwithuserconfiguration_3acompletion_3a',['pairWithUserConfiguration:completion:',['../protocol_a_d_i_fit_smart_sensor_specific_protocol-p.html#a924e1a33511cff457b839c2250514f98',1,'ADIFitSmartSensorSpecificProtocol-p']]],
   ['parse_3a',['parse:',['../protocol_a_d_i_x_cell_business_rules_protocol-p.html#a9780427a208496eb7eb5a62954af3dd0',1,'ADIXCellBusinessRulesProtocol-p']]],
   ['parsedirectorylist_3a',['parseDirectoryList:',['../protocol_a_d_i_x_cell_business_rules_protocol-p.html#ab35bd8704fdcd65405e07535b2236208',1,'ADIXCellBusinessRulesProtocol-p']]],
   ['parsejumpeventfromdata_3awearingposition_3a',['parseJumpEventFromData:wearingPosition:',['../protocol_a_d_i_x_cell_business_rules_protocol-p.html#aa46dd569725b6bad4749444c6094aa73',1,'ADIXCellBusinessRulesProtocol-p']]],

@@ -1,10 +1,8 @@
 var searchData=
 [
-  ['sc2_5fbytearray',['sc2_byteArray',['../structsc2__byte_array.html',1,'']]],
-  ['sc2_5fdirectoryentry',['sc2_directoryEntry',['../structsc2__directory_entry.html',1,'']]],
-  ['sc2datetime',['sc2dateTime',['../structsc2date_time.html',1,'']]],
-  ['sc2parser_5fcontext',['sc2parser_context',['../structsc2parser__context.html',1,'']]],
-  ['sc2requestqueue',['sc2requestQueue',['../structsc2request_queue.html',1,'']]],
-  ['sc2rsc_5fmeasurement_5ft',['sc2rsc_measurement_t',['../structsc2rsc__measurement__t.html',1,'']]],
-  ['sc2sensor_5fcontext',['sc2sensor_context',['../structsc2sensor__context.html',1,'']]]
+  ['xcell_5fbytearray',['xcell_byteArray',['../structxcell__byte_array.html',1,'']]],
+  ['xcell_5fcontext',['xcell_context',['../structxcell__context.html',1,'']]],
+  ['xcell_5frequest_5fqueue_5felement',['xcell_request_queue_element',['../structxcell__request__queue__element.html',1,'']]],
+  ['xcell_5fsession_5fdirectory_5ft',['xcell_session_directory_t',['../structxcell__session__directory__t.html',1,'']]],
+  ['xcell_5ftime_5ft',['xcell_time_t',['../structxcell__time__t.html',1,'']]]
 ];

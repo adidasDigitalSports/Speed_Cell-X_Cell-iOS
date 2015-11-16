@@ -1,6 +1,6 @@
 #import <Foundation/Foundation.h>
 #import <miCoachSensors/miCoachInterfaces.h>
-#import "ADIGeneralDevice.h"
+#import <miCoachSensors/ADIGeneralDevice.h>
 
 
 /**
@@ -41,7 +41,9 @@
 - (instancetype)initWithDevice:(id<ADIBluetoothDeviceProtocol>)device bluetoothProtocol:(id<ADIBluetoothProviderProtocol, ADISpeedCellSensorProtocol>)protocol;
 
 /**
- *  @brief Downloads every session from the remote device.
+ *  @brief Downloads every session from the SPEED_CELL sensor.
+ *  
+ *  Note: before the actual download starts, sensor stops the session which takes approximately 15 seconds. That time is needed to write that part of the session which is still in memory to the persistent storage.
  *
  *  @param completion Block object to be executed on completion of download. This block has no return value and takes two arguments: an NSArray of ADISpeedCellSession instances and an NSError containing the error. On success the error is nil.
  */

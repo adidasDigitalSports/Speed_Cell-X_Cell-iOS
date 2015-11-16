@@ -1,7 +1,11 @@
 var searchData=
 [
   ['mainpage_2etxt',['mainpage.txt',['../mainpage_8txt.html',1,'']]],
+  ['manufacturername',['manufacturerName',['../interface_a_d_i_fit_smart_device_info.html#a6b1171fb1125b7a1a62c1754a3896700',1,'ADIFitSmartDeviceInfo']]],
+  ['markerrecords',['markerRecords',['../interface_a_d_i_fit_smart_activity_record.html#aba599dbaf7da6e10739fe3fdb75c3d8c',1,'ADIFitSmartActivityRecord']]],
+  ['markers',['markers',['../interface_a_d_i_fit_smart_session.html#adfdb71d368c202db503a2c73be9317b3',1,'ADIFitSmartSession']]],
   ['maxrezacceleration',['maxRezAcceleration',['../interface_a_d_i_x_cell_cut_event.html#ac809e7900b156b4126c325bd846d1025',1,'ADIXCellCutEvent::maxRezAcceleration()'],['../interface_a_d_i_x_cell_jump_event.html#ac809e7900b156b4126c325bd846d1025',1,'ADIXCellJumpEvent::maxRezAcceleration()'],['../interface_a_d_i_x_cell_sprint_event.html#ac809e7900b156b4126c325bd846d1025',1,'ADIXCellSprintEvent::maxRezAcceleration()']]],
+  ['metriccount',['metricCount',['../interface_a_d_i_fit_smart_screen.html#a4408ff6d1586a59207c778f632ee1708',1,'ADIFitSmartScreen']]],
   ['micoachbluetooth',['miCoachBluetooth',['../group___m_i_c_o_a_c_h___b_l_u_e_t_o_o_t_h.html',1,'']]],
   ['micoachsensors',['miCoachSensors',['../group___m_i_c_o_a_c_h___i_n_t_e_r_f_a_c_e_s.html',1,'']]],
   ['micoachbluetooth_2eh',['miCoachBluetooth.h',['../mi_coach_bluetooth_8h.html',1,'']]],
@@ -18,5 +22,6 @@ var searchData=
   ['millisecondselapsed',['milliSecondsElapsed',['../interface_a_d_i_x_cell_reaction_time_event.html#a9c71927946ca2062b733f075484f5685',1,'ADIXCellReactionTimeEvent']]],
   ['min',['min',['../structsc2date_time.html#a3e202b201e6255d975cd6d3aff1f5a4d',1,'sc2dateTime']]],
   ['mins',['mins',['../structxcell__time__t.html#aafb8fcb8e18658aceea7aa3dbf8a589e',1,'xcell_time_t']]],
+  ['modelnumber',['modelNumber',['../interface_a_d_i_fit_smart_device_info.html#ab8b57c5e6161f5e7b44ed7c73d17211a',1,'ADIFitSmartDeviceInfo']]],
   ['month',['month',['../structsc2date_time.html#aedb06abe5aff12fa3e7e0e71a374edfb',1,'sc2dateTime::month()'],['../structxcell__time__t.html#a3e00faf7fbf9805e9ec4d2edd6339050',1,'xcell_time_t::month()']]]
 ];

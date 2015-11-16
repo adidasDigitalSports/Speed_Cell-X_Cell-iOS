@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['namefromuuid_3a',['nameFromUUID:',['../interface_a_d_i_bluetooth_logging_helper.html#a497f49506bb9a41e550e7195155fd2eb',1,'ADIBluetoothLoggingHelper']]],
   ['needtocallbackforgettime',['needToCallbackForGetTime',['../structsc2sensor__context.html#aeb9add7be8f17112cb826eeb8f248dab',1,'sc2sensor_context']]],
   ['needtocallbackforsettime',['needToCallbackForSetTime',['../structsc2sensor__context.html#ac81ba0b3b229c60f2d18ad5035c52caf',1,'sc2sensor_context']]],
   ['needtorequestfiledownload',['needToRequestFileDownload',['../structsc2sensor__context.html#aea8f642aa9eb80fc79c2fec573a6508d',1,'sc2sensor_context']]],

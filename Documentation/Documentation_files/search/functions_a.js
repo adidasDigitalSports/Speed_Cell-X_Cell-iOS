@@ -75,6 +75,9 @@ var searchData=
   ['setdownloadalreadydownloadedsessions_3a',['setDownloadAlreadyDownloadedSessions:',['../protocol_a_d_i_speed_cell_sensor_specific_protocol-p.html#ae04e118ac0e25d1647d36b19ef2cf188',1,'ADISpeedCellSensorSpecificProtocol-p']]],
   ['sethandlerfordownloadprogresschange_3a',['setHandlerForDownloadProgressChange:',['../protocol_a_d_i_download_sessions_protocol-p.html#ab0dd0fc66c4ca3d96beb913b9a2d3ace',1,'ADIDownloadSessionsProtocol-p']]],
   ['sethandlerfordownloadprogresschange_3awithnotificationlimit_3a',['setHandlerForDownloadProgressChange:withNotificationLimit:',['../protocol_a_d_i_download_sessions_protocol-p.html#aa5674bc21ffcfabf673cb450e8eb4bd9',1,'ADIDownloadSessionsProtocol-p']]],
+  ['sethandlerfordualmodeeventnotification_3a',['setHandlerForDualModeEventNotification:',['../protocol_a_d_i_fit_smart_dual_mode_protocol-p.html#a2c4e5fc114ff5dc94e2ba9bc3dc967fb',1,'ADIFitSmartDualModeProtocol-p']]],
+  ['sethandlerfordualmodesensorreadings_3a',['setHandlerForDualModeSensorReadings:',['../protocol_a_d_i_fit_smart_dual_mode_protocol-p.html#a48e845efbcdc133f234b759a18579ed4',1,'ADIFitSmartDualModeProtocol-p']]],
+  ['sethandlerforfirmwareprogresschange_3a',['setHandlerForFirmwareProgressChange:',['../protocol_a_d_i_fit_smart_sensor_specific_protocol-p.html#a3e42decbf06422c21bcbdd70b3ce3cad',1,'ADIFitSmartSensorSpecificProtocol-p']]],
   ['setposition_3a',['setPosition:',['../protocol_a_d_i_x_cell_sensor_specific_protocol-p.html#a74a61c241cb5cfbd1afaacf8bc269c2c',1,'ADIXCellSensorSpecificProtocol-p']]],
   ['setserialnumber_3a',['setSerialNumber:',['../protocol_a_d_i_bluetooth_device_protocol-p.html#a3663fe6df6dfa20d74b5539ccc7bc898',1,'ADIBluetoothDeviceProtocol-p']]],
   ['sharedinstance',['sharedInstance',['../interface_a_d_i_bluetooth.html#ab6884975e069628328d05cf0e2c3dc67',1,'ADIBluetooth::sharedInstance()'],['../interface_a_d_i_known_devices_store.html#ab6884975e069628328d05cf0e2c3dc67',1,'ADIKnownDevicesStore::sharedInstance()']]],
@@ -84,10 +87,14 @@ var searchData=
   ['startaugmentedfeedbackshuttle_3a',['startAugmentedFeedbackShuttle:',['../protocol_a_d_i_augmented_feedback_protocol-p.html#ac1e3554cfc17b8e6d283e98a2097f647',1,'ADIAugmentedFeedbackProtocol-p']]],
   ['startdiscoverywithcallback_3a',['startDiscoveryWithCallback:',['../interface_a_d_i_bluetooth_manager.html#acf1cabccbc38454937dacb48a6ac0fee',1,'ADIBluetoothManager']]],
   ['startdiscoverywithfilter_3a',['startDiscoveryWithFilter:',['../interface_a_d_i_bluetooth.html#a73ccbb11aa71f90236952595f02c221e',1,'ADIBluetooth']]],
+  ['startdualmodeforassessmentworkout_3a',['startDualModeForAssessmentWorkout:',['../protocol_a_d_i_fit_smart_dual_mode_protocol-p.html#a596f4bb2f1a61fb5a896c0762b46f500',1,'ADIFitSmartDualModeProtocol-p']]],
+  ['startdualmodeforcoachedworkout_3a',['startDualModeForCoachedWorkout:',['../protocol_a_d_i_fit_smart_dual_mode_protocol-p.html#acf8f293551b320cc646d2a82064898ab',1,'ADIFitSmartDualModeProtocol-p']]],
+  ['startdualmodeforfreeworkout_3a',['startDualModeForFreeWorkout:',['../protocol_a_d_i_fit_smart_dual_mode_protocol-p.html#a2fe7460d72273f407cb80dba94b3050a',1,'ADIFitSmartDualModeProtocol-p']]],
+  ['startdualmodeforstrengthandflexworkout_3a',['startDualModeForStrengthAndFlexWorkout:',['../protocol_a_d_i_fit_smart_dual_mode_protocol-p.html#a714f3b7714989341a17052ea44e91486',1,'ADIFitSmartDualModeProtocol-p']]],
   ['startheartrateupdateswithhandler_3a',['startHeartRateUpdatesWithHandler:',['../protocol_a_d_i_heart_rate_protocol-p.html#a9fe5e734f9e8a429d4c4f4602b066f5a',1,'ADIHeartRateProtocol-p']]],
   ['startstriderateupdateswithhandler_3a',['startStrideRateUpdatesWithHandler:',['../protocol_a_d_i_stride_rate_protocol-p.html#a48b48633fbe8fddf4ef81e448ed5f60c',1,'ADIStrideRateProtocol-p']]],
+  ['startsync',['startSync',['../protocol_a_d_i_fit_smart_sensor_specific_protocol-p.html#a5a9157eb0e9768482de0c04971473600',1,'ADIFitSmartSensorSpecificProtocol-p']]],
   ['stopdiscovery',['stopDiscovery',['../interface_a_d_i_bluetooth.html#a3a662b277541de315e42d7e5acd054d7',1,'ADIBluetooth::stopDiscovery()'],['../interface_a_d_i_bluetooth_manager.html#a3a662b277541de315e42d7e5acd054d7',1,'ADIBluetoothManager::stopDiscovery()']]],
   ['storeserialnumber_3aforperipheralidentifier_3a',['storeSerialNumber:forPeripheralIdentifier:',['../interface_a_d_i_known_devices_store.html#a5dcbb0b8590a32c88628e1ed9dd94883',1,'ADIKnownDevicesStore']]],
-  ['switchtoaugmentedfeedbackstate_3acompletion_3a',['switchToAugmentedFeedbackState:completion:',['../protocol_a_d_i_augmented_feedback_protocol-p.html#a892e2d1d9bc8206f1a83f7fc62453e23',1,'ADIAugmentedFeedbackProtocol-p']]],
-  ['swizzle_3awith_3aonclass_3a',['swizzle:with:onClass:',['../interface_a_d_i_bluetooth_logging_helper.html#a96555b53bbb0ff5d99269dab7d762364',1,'ADIBluetoothLoggingHelper']]]
+  ['switchtoaugmentedfeedbackstate_3acompletion_3a',['switchToAugmentedFeedbackState:completion:',['../protocol_a_d_i_augmented_feedback_protocol-p.html#a892e2d1d9bc8206f1a83f7fc62453e23',1,'ADIAugmentedFeedbackProtocol-p']]]
 ];
