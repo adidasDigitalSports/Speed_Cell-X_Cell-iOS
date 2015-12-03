@@ -96,29 +96,32 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;- (BOOL)<a class="code" href="protocol_a_d_i_bluetooth_device_protocol-p.html#a46e592e15661db61ef8e8e1035ff7b92">autoReconnect</a>;</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;- (void)setAutoReconnect:(BOOL)autoReconnect;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;-(BOOL) <a class="code" href="protocol_a_d_i_bluetooth_device_protocol-p.html#ad3515f7fe2b8ed2b9e14233cf7ede0bc">isConnected</a>;</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;- (void)disconnectWithCallback:(<span class="keywordtype">void</span> (^)())callback;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;- (void)setAutoReconnect:(BOOL)autoReconnect;</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;- (void)didConnectPeripheral:(CBPeripheral *)peripheral withCharacteristics:(NSDictionary *)characteristics;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;- (instancetype)initWithName:(NSString *)deviceLocalName serialNumber:(NSString *)serialNumber;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;+ (instancetype)deviceWithName:(NSString *)deviceLocalName serialNumber:(NSString *)serialNumber;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="keyword">@optional</span></div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;+ (NSArray *)<a class="code" href="protocol_a_d_i_bluetooth_device_protocol-p.html#a1a395efc0fa29dc47fb12b35c980efd4">requiredCharacteristics</a>;</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;+ (NSArray *)<a class="code" href="protocol_a_d_i_bluetooth_device_protocol-p.html#af32766ebbc90bcdaa2efd5e38e73fde7">notifyCharacteristics</a>;</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;+ (NSString *)serialNumberFromAdvertismentData:(NSDictionary *)advertisementData;</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="keyword">@end</span></div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;- (void)disconnectWithCallback:(<span class="keywordtype">void</span> (^)())callback;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;- (void)didConnectPeripheral:(CBPeripheral *)peripheral withCharacteristics:(NSDictionary *)characteristics;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;- (instancetype)initWithName:(NSString *)deviceLocalName serialNumber:(NSString *)serialNumber;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;+ (instancetype)deviceWithName:(NSString *)deviceLocalName serialNumber:(NSString *)serialNumber;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="keyword">@optional</span></div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;+ (NSArray *)<a class="code" href="protocol_a_d_i_bluetooth_device_protocol-p.html#a1a395efc0fa29dc47fb12b35c980efd4">requiredCharacteristics</a>;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;+ (NSArray *)<a class="code" href="protocol_a_d_i_bluetooth_device_protocol-p.html#af32766ebbc90bcdaa2efd5e38e73fde7">notifyCharacteristics</a>;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;+ (NSString *)serialNumberFromAdvertismentData:(NSDictionary *)advertisementData;</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;</div>
 <div class="ttc" id="protocol_a_d_i_bluetooth_device_protocol-p_html"><div class="ttname"><a href="protocol_a_d_i_bluetooth_device_protocol-p.html">ADIBluetoothDeviceProtocol-p</a></div><div class="ttdoc">Protocol defining methods of ADIBluetoothDevice class. </div><div class="ttdef"><b>Definition:</b> ADIBluetoothDeviceProtocol.h:13</div></div>
 <div class="ttc" id="protocol_a_d_i_bluetooth_device_protocol-p_html_a888c9727d2bc99ce68834e4fd7bff9b5"><div class="ttname"><a href="protocol_a_d_i_bluetooth_device_protocol-p.html#a888c9727d2bc99ce68834e4fd7bff9b5">-[ADIBluetoothDeviceProtocol-p peripheral]</a></div><div class="ttdeci">CBPeripheral * peripheral()</div></div>
 <div class="ttc" id="protocol_a_d_i_bluetooth_device_protocol-p_html_ad3263376d56c0658118104c12f598ba5"><div class="ttname"><a href="protocol_a_d_i_bluetooth_device_protocol-p.html#ad3263376d56c0658118104c12f598ba5">-[ADIBluetoothDeviceProtocol-p deviceLocalName]</a></div><div class="ttdeci">NSString * deviceLocalName()</div></div>
+<div class="ttc" id="protocol_a_d_i_bluetooth_device_protocol-p_html_ad3515f7fe2b8ed2b9e14233cf7ede0bc"><div class="ttname"><a href="protocol_a_d_i_bluetooth_device_protocol-p.html#ad3515f7fe2b8ed2b9e14233cf7ede0bc">-[ADIBluetoothDeviceProtocol-p isConnected]</a></div><div class="ttdeci">BOOL isConnected()</div><div class="ttdoc">Boolean value indicating if the device is connected. </div></div>
 <div class="ttc" id="protocol_a_d_i_bluetooth_device_protocol-p_html_a4cd9c927a87a96ee3d7327c7783f48b0"><div class="ttname"><a href="protocol_a_d_i_bluetooth_device_protocol-p.html#a4cd9c927a87a96ee3d7327c7783f48b0">-[ADIBluetoothDeviceProtocol-p serialNumber]</a></div><div class="ttdeci">NSString * serialNumber()</div></div>
 <div class="ttc" id="protocol_a_d_i_bluetooth_device_protocol-p_html_a1a395efc0fa29dc47fb12b35c980efd4"><div class="ttname"><a href="protocol_a_d_i_bluetooth_device_protocol-p.html#a1a395efc0fa29dc47fb12b35c980efd4">+[ADIBluetoothDeviceProtocol-p requiredCharacteristics]</a></div><div class="ttdeci">NSArray * requiredCharacteristics()</div><div class="ttdoc">Method for ADIBluetoothDevice subclasses to implement providing required characteristic UUID strings...</div></div>
 <div class="ttc" id="protocol_a_d_i_bluetooth_device_protocol-p_html_af32766ebbc90bcdaa2efd5e38e73fde7"><div class="ttname"><a href="protocol_a_d_i_bluetooth_device_protocol-p.html#af32766ebbc90bcdaa2efd5e38e73fde7">+[ADIBluetoothDeviceProtocol-p notifyCharacteristics]</a></div><div class="ttdeci">NSArray * notifyCharacteristics()</div><div class="ttdoc">Method for ADIBluetoothDevice subclasses to implement providing notify characteristic UUID strings...</div></div>
@@ -129,7 +132,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Nov 16 2015 23:05:29 for miCoachSensors by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Dec 3 2015 21:52:11 for miCoachSensors by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

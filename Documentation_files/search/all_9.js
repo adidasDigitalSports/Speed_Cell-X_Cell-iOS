@@ -9,7 +9,7 @@ var searchData=
   ['intervaldurationinseconds',['intervalDurationInSeconds',['../interface_a_d_i_fit_smart_workout_interval.html#a8b36d2e5d20286caca15fab5a72652ae',1,'ADIFitSmartWorkoutInterval']]],
   ['intervalhustles',['intervalHustles',['../interface_a_d_i_x_cell_session.html#ad7fa47d9fb83505fe0c12d613d06b7cc',1,'ADIXCellSession']]],
   ['intervals',['intervals',['../interface_a_d_i_fit_smart_workout.html#aea9ab60478550a8e462d48ef537a64f7',1,'ADIFitSmartWorkout']]],
-  ['isconnected',['isConnected',['../interface_a_d_i_general_device.html#ad3515f7fe2b8ed2b9e14233cf7ede0bc',1,'ADIGeneralDevice']]],
+  ['isconnected',['isConnected',['../interface_a_d_i_bluetooth_device.html#ad3515f7fe2b8ed2b9e14233cf7ede0bc',1,'ADIBluetoothDevice::isConnected()'],['../interface_a_d_i_general_device.html#ad3515f7fe2b8ed2b9e14233cf7ede0bc',1,'ADIGeneralDevice::isConnected()'],['../protocol_a_d_i_bluetooth_device_protocol-p.html#ad3515f7fe2b8ed2b9e14233cf7ede0bc',1,'ADIBluetoothDeviceProtocol-p::isConnected()']]],
   ['isfinished',['isFinished',['../structxcell__request__queue__element.html#a0e40c5fb8a37c60628678563bfea6975',1,'xcell_request_queue_element']]],
   ['isindualmode',['isInDualMode',['../protocol_a_d_i_fit_smart_dual_mode_protocol-p.html#a984a738ecf75f17b6fc4b676775c4051',1,'ADIFitSmartDualModeProtocol-p']]],
   ['isrecordvalid',['isRecordValid',['../interface_a_d_i_fit_smart_activity_record.html#a7cfdd4382b19aa7505f5f4d79b8f0333',1,'ADIFitSmartActivityRecord']]],

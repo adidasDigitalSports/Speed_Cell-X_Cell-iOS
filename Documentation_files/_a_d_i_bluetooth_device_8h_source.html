@@ -93,11 +93,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
 <div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="interface_a_d_i_bluetooth_device.html#afb69a9b6089792d5669579cdd9188412">   48</a></span>&#160;<span class="keyword">@property</span> (nonatomic) BOOL <a class="code" href="protocol_a_d_i_bluetooth_device_protocol-p.html#a46e592e15661db61ef8e8e1035ff7b92">autoReconnect</a>;</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;- (<a class="code" href="group___m_i_c_o_a_c_h___b_l_u_e_t_o_o_t_h.html#gaf886afbabe0a3db76afb33a65a18e926">ADIBluetoothDeviceType</a>)<a class="code" href="interface_a_d_i_bluetooth_device.html#ae979b0f2079e66400993db80f84d3ae7">type</a>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;-(BOOL) <a class="code" href="interface_a_d_i_bluetooth_device.html#ad3515f7fe2b8ed2b9e14233cf7ede0bc">isConnected</a>;</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keyword">@end</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;- (<a class="code" href="group___m_i_c_o_a_c_h___b_l_u_e_t_o_o_t_h.html#gaf886afbabe0a3db76afb33a65a18e926">ADIBluetoothDeviceType</a>)<a class="code" href="interface_a_d_i_bluetooth_device.html#ae979b0f2079e66400993db80f84d3ae7">type</a>;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
 <div class="ttc" id="group___m_i_c_o_a_c_h___b_l_u_e_t_o_o_t_h_html_gaf886afbabe0a3db76afb33a65a18e926"><div class="ttname"><a href="group___m_i_c_o_a_c_h___b_l_u_e_t_o_o_t_h.html#gaf886afbabe0a3db76afb33a65a18e926">ADIBluetoothDeviceType</a></div><div class="ttdeci">ADIBluetoothDeviceType</div><div class="ttdoc">Specifies the type of remote devices. </div><div class="ttdef"><b>Definition:</b> ADIBluetoothDeviceType.h:9</div></div>
+<div class="ttc" id="interface_a_d_i_bluetooth_device_html_ad3515f7fe2b8ed2b9e14233cf7ede0bc"><div class="ttname"><a href="interface_a_d_i_bluetooth_device.html#ad3515f7fe2b8ed2b9e14233cf7ede0bc">-[ADIBluetoothDevice isConnected]</a></div><div class="ttdeci">BOOL isConnected()</div><div class="ttdoc">Boolean value indicating if the device is connected. </div></div>
 <div class="ttc" id="protocol_a_d_i_bluetooth_device_protocol-p_html"><div class="ttname"><a href="protocol_a_d_i_bluetooth_device_protocol-p.html">ADIBluetoothDeviceProtocol-p</a></div><div class="ttdoc">Protocol defining methods of ADIBluetoothDevice class. </div><div class="ttdef"><b>Definition:</b> ADIBluetoothDeviceProtocol.h:13</div></div>
 <div class="ttc" id="interface_a_d_i_bluetooth_device_html_ae979b0f2079e66400993db80f84d3ae7"><div class="ttname"><a href="interface_a_d_i_bluetooth_device.html#ae979b0f2079e66400993db80f84d3ae7">-[ADIBluetoothDevice type]</a></div><div class="ttdeci">ADIBluetoothDeviceType type()</div><div class="ttdoc">Abstract instance method for subclasses to override. </div></div>
 <div class="ttc" id="interface_a_d_i_bluetooth_device_html_aa70fe7cb84bf40b097a1c3a5474f905a"><div class="ttname"><a href="interface_a_d_i_bluetooth_device.html#aa70fe7cb84bf40b097a1c3a5474f905a">ADIBluetoothDevice::delegate</a></div><div class="ttdeci">id&lt; ADIBluetoothDeviceDelegate &gt; delegate</div><div class="ttdoc">The object that acts as a delegate of the bluetooth device. </div><div class="ttdef"><b>Definition:</b> ADIBluetoothDevice.h:21</div></div>
@@ -110,7 +113,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Nov 16 2015 23:05:29 for miCoachSensors by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Dec 3 2015 21:52:11 for miCoachSensors by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>
