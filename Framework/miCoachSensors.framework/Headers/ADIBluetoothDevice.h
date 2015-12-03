@@ -48,6 +48,13 @@
 @property (nonatomic) BOOL autoReconnect;
 
 /**
+ *  @brief Boolean value indicating if the device is connected.
+ *
+ *  @return YES if the device is connected, NO otherwise.
+ */
+-(BOOL) isConnected;
+
+/**
  *  @brief Abstract instance method for subclasses to override.
  *
  *  @return Returns type of the bluetooth device.

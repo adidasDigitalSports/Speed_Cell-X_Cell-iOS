@@ -37,7 +37,7 @@ class MasterViewController: UITableViewController, ADIBluetoothDelegate {
                     // need to set delegate to handle if device found
                     strongSelf.bluetooth.bluetoothDelegate = self
                     
-                    // look for SPEED_CELL only
+                    // look for bluetooth device
                     strongSelf.bluetooth.startDiscoveryWithFilter(ADIDiscoveryFilter(deviceType: ADIBluetoothDeviceTypeGeneric))
                 }
             }

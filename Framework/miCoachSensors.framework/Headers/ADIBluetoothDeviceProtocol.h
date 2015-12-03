@@ -55,6 +55,13 @@
 - (BOOL)autoReconnect;
 
 /**
+ *  @brief Boolean value indicating if the device is connected.
+ *
+ *  @return YES if the device is connected, NO otherwise.
+ */
+-(BOOL) isConnected;
+
+/**
  *  @brief Boolean value indicating if automatic reconnect to the remote device is active.
  *
  *  @param autoReconnect If set to YES, then after an unexpected disconnection a reconnect attempt is performed.
